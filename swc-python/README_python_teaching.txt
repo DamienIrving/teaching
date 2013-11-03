@@ -1,15 +1,18 @@
 # Lesson order #
 
 1. Introduction
-- Topics: importing modules, calling methods 
+- Topics: loading libraries (import), calling methods and members, reading and storing
+  data, variable assignment, indexing (including slice and stride), basic plotting 
+  (matplotlib), array operations 
 - Main point: an example of how to do typical tasks in Python 
 - Notebook: python-intro.ipynb
 - Time:
 
 2. Functions
-- Topics: defining functions
-- Main point: write code in small re-usable chunks to enhance readability and reduce duplication
-- Notebook: python-loops.ipynb
+- Topics: defining functions, call stack,
+- Main point: write code in small re-usable chunks to enhance readability and reduce 
+  duplication
+- Notebook: python-functions.ipynb
 - Time:
 
 3. Loops and indexing
