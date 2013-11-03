@@ -6,14 +6,21 @@
   (matplotlib), array operations 
 - Main point: an example of how to do typical tasks in Python 
 - Notebook: python-intro.ipynb
+- Sketches: variable assignment
 - Time:
 
 2. Functions
-- Topics: defining functions, call stack,
-- Main point: write code in small re-usable chunks to enhance readability and reduce 
-  duplication
+- Topics: defining functions, call stack, doc strings, positional and keyword arguments 
+  (or parameters)
+- Main points: 
+  - functions are used to repeat multiple operations with a single command
+  - with them you can write code in small re-usable chunks to enhance readability and 
+    reduce duplication
 - Notebook: python-functions.ipynb
+- Sketches: call stack
 - Time:
+
+- Possible edits: Remove the testing content, because that comes later?
 
 3. Loops and indexing
 - Topics: loops (if, while)
