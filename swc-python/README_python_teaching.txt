@@ -1,9 +1,10 @@
 # Lesson order #
 
 1. Introduction
-- Topics: loading libraries (import), calling methods and members, reading and storing
-  data, variable assignment, indexing (including slice and stride), basic plotting 
-  (matplotlib), array operations 
+- Topics: importing libraries/modules (the former being a large collection of the latter),
+  calling functions/attributes (modules) or methods/members (classes) and members, reading
+  and storing data, variable assignment, indexing (including slice and stride), basic 
+  plotting (matplotlib), array operations 
 - Main point: an example of how to do typical tasks in Python 
 - Notebook: python-intro.ipynb
 - Sketches: variable assignment
@@ -11,11 +12,11 @@
 
 2. Functions
 - Topics: defining functions, call stack, doc strings, positional and keyword arguments 
-  (or parameters)
+  (also called parameters)
 - Main points: 
   - functions are used to repeat multiple operations with a single command
-  - with them you can write code in small re-usable chunks to enhance readability and 
-    reduce duplication
+  - use them to write code in small re-usable chunks (enhances readability, reduces 
+    duplication)
 - Notebook: python-functions.ipynb
 - Sketches: call stack
 - Time:
