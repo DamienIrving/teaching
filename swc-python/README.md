@@ -35,44 +35,44 @@ An introductory example of how to perform typical data analysis tasks in Python.
   methods/members (classes), reading and storing data, variable assignment, indexing 
   (including slice and stride), basic plotting, array operations
   
-  
+---  
 **2. Creating Functions** (python-functions.ipynb) 
 
 Use functions to make code easier to re-use and easier to understand. 
 * Topics: defining functions, the call stack, doc strings, positional and keyword 
   arguments 
   
-  
+---
 **3. Analysing Multiple Datasets** (python-loops.ipynb) 
 
 Use lists and arrays to store related values, and loops to repeat operations on them.
 * Topics: loops, lists
   
-  
+---  
 **4. Making Choices** (python-conditionals.ipynb) 
 
 Have programs make choices based on the values they are manipulating. 
 * Topics: RGB color schemes, tuples, conditional statements
   
-  
+---  
 **5. Testing and Defensive Programming** (python-testing.ipynb) 
 
 The how, why and when of testing your code and programming defensively. 
 * Topics: unit testing, assertions
   
-  
+---  
 **6. Errors** (python-errors.ipynb) 
 
 * Topics: debugger tools,  
   
-  
+---  
 **7. Interacting with the Command Line** (python-cmdline.ipynb) 
 
 Write code that allows the user to specify options at the command line, so you don't have 
 to manually edit your code every time you want to make a minor change.
 * Topics: parsing the command line, help documentation
   
-  
+---  
 **8. Number Crunching** (python-numerical.ipynb) 
 
 Tips to speed up your code and avoid bugs when dealing with numbers. 
