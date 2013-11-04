@@ -1,0 +1,25 @@
+Welcome to the ITS Research Software Carpentry Bootcamp
+
+ATTENDANCE LIST
+- Damien Irving (Meteorology)
+
+
+FAQ's
+
+What was the website URL again?
+- http://damienirving.github.io/2013-11-25-unimelb/
+
+What is Software Carpentry?
+- Website: http://software-carpentry.org/
+- History: http://arxiv.org/abs/1307.5448
+- PyConAu: http://pyvideo.org/video/2230/software-carpentry-arrives-down-under
+
+Where can I get the 'lecture' notes?
+- GitHub: https://github.com/DamienIrving/teaching
+
+
+
+RESOURCES
+
+- Best practices in scientific computing: http://arxiv.org/abs/1210.0530
+- Software Carpentry online lessons: http://software-carpentry.org/v4/index.html

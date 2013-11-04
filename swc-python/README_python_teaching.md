@@ -1,5 +1,6 @@
-Python teaching material
-========================
+---
+title: Python teaching material
+---
 
 This directory contains the Python related content that I teach to novice (or beginner 
 level) users at Software Carpentry bootcamps. The best way to learn how to program is to 
@@ -28,55 +29,43 @@ then navigate to this directory and fire up the IPython notebook:
 Lessons
 -------
 
-1. **Introduction: Data Analysis**
+**1. Introduction: Data Analysis** (python-intro.ipynb)
+An introductory example of how to perform typical data analysis tasks in Python
+* Topics: importing libraries/modules, calling functions/attributes (modules) or 
+  methods/members (classes), reading and storing data, variable assignment, indexing 
+  (including slice and stride), basic plotting (matplotlib), array operations
 
-   * *Topics:* importing libraries/modules, calling functions/attributes (modules) or 
-     methods/members (classes), reading and storing data, variable assignment, indexing 
-     (including slice and stride), basic plotting (matplotlib), array operations 
-   * *Main point:* example of how to do typical tasks in Python
-   * *Notebook:* python-intro.ipynb
+**2. Creating Functions** (python-functions.ipynb)
+Functions allow you to write code in small re-usable chunks, which enhances code 
+readability and reduces duplication.
+* Topics: defining functions, call stack, doc strings, positional and keyword arguments 
 
-2. **Creating Functions**
-
-   * *Topics:* defining functions, call stack, doc strings, positional and keyword arguments 
-     (also called parameters)
-   * *Main point:* use functions to write code in small re-usable chunks (enhances 
-     readability, reduces duplication)
-   * *Notebook:* python-functions.ipynb
-
-3. **Analysing Multiple Datasets**
-
+**3. Analysing Multiple Datasets** (python-loops.ipynb)
    * *Topics:* loops (if, while)
    * *Main point:* get the computer to complete repetitive tasks for you
    * *Notebook:* python-loops.ipynb
 
-4. **Making Choices**
-
+**4. Making Choices**
    * *Topics:* RGB color schemes, lists, tuples, conditional statements
-   * *Main point:* for defensive programming, add assertions to your code
    * *Notebook:* python-conditionals.ipynb
 
-5. **Testing and Defensive Programming**
-
+**5. Testing and Defensive Programming**
    * *Topics:* unit testing, assertions
    * *Main point:* how, why, and when to test your code
    * *Notebook:* python-testing.ipynb
 
-6. **Errors**
-   
+**6. Errors**
    * *Topics:* debugger tools,  
    * *Main point:*
    * *Notebook:* python-errors.ipynb
 
-7. **Interacting with the Command Line**
-   
+**7. Interacting with the Command Line**
    * *Topics:* sys.argv, argparse
    * *Main point:* write code that gives options at the command line, so you don't have to 
      continually manually edit your code (also aids documentation)
    * *Notebook:* python-cmdline.ipynb
 
-8. **Number Crunching**
+**8. Number Crunching**
    * *Topics:* linear algebra, data types, matrix programming, floating point arithmetic
    * *Main point:* there are some things you to know when dealing with numbers... 
    * *Notebook:* python-numerical.ipynb
-
