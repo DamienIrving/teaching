@@ -65,28 +65,21 @@ Have programs make choices based on the values they are manipulating. (python-co
 *Topics:* RGB color schemes, tuples, conditional statements
   
 
-### c5. Testing and Defensive Programming
+### c5. Getting the Right Answer
 
 Know the how, why and when of testing your code (summarised 
 [here](http://drclimate.wordpress.com/2013/10/10/testing-your-code/)) and programming defensively. 
 (python-testing.ipynb)
 
-*Topics:* assertions, exception handling, unit testing, test driven development, code coverage
+*Topics:* assertions, exception handling, unit testing, test driven development
   
 
-### c6. Errors
-
-(python-errors.ipynb)
-
-*Topics:* debugger tools  
-  
-
-### c7. Interacting with the Command Line
+### c6. Command Line Programs
 
 Write code that allows the user to specify options at the command line, so you don't have 
 to manually edit your code every time you want to make a minor change. (python-cmdline.ipynb)
 
-*Topics:* parsing the command line, help documentation
+*Topics:* parsing the command line
   
 
 ### e1. Number Crunching 
