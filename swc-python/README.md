@@ -28,53 +28,61 @@ then navigate to this directory and fire up the IPython notebook:
 Lessons
 -------
 
-**1. Introduction to Data Analysis** (python-intro.ipynb) 
+### 1. Introduction to Data Analysis
 
-An introductory example of how to perform typical data analysis tasks in Python. 
-* Topics: importing libraries/modules, calling functions/attributes (modules) or 
-  methods/members (classes), reading and storing data, variable assignment, indexing 
-  (including slice and stride), basic plotting, array operations
-  
----  
-**2. Creating Functions** (python-functions.ipynb) 
+An introductory example of how to perform typical data analysis tasks in Python. (python-intro.ipynb)
 
-Use functions to make code easier to re-use and easier to understand. 
-* Topics: defining functions, the call stack, doc strings, positional and keyword 
-  arguments 
+*Topics:* importing libraries/modules, calling functions/attributes (modules) or 
+methods/members (classes), reading and storing data, variable assignment, indexing 
+(including slice and stride), basic plotting, array operations
   
----
-**3. Analysing Multiple Datasets** (python-loops.ipynb) 
+  
+### 2. Creating Functions
 
-Use lists and arrays to store related values, and loops to repeat operations on them.
-* Topics: loops, lists
-  
----  
-**4. Making Choices** (python-conditionals.ipynb) 
+Use functions to make code easier to re-use and easier to understand. (python-functions.ipynb) 
 
-Have programs make choices based on the values they are manipulating. 
-* Topics: RGB color schemes, tuples, conditional statements
+*Topics:* defining functions, the call stack, doc strings, positional and keyword arguments 
   
----  
-**5. Testing and Defensive Programming** (python-testing.ipynb) 
 
-The how, why and when of testing your code and programming defensively. 
-* Topics: unit testing, assertions
-  
----  
-**6. Errors** (python-errors.ipynb) 
+### 3. Analysing Multiple Datasets
 
-* Topics: debugger tools,  
+Use lists and arrays to store related values, and loops to repeat operations on them. (python-loops.ipynb)
+
+*Topics:* loops, lists
   
----  
-**7. Interacting with the Command Line** (python-cmdline.ipynb) 
+
+### 4. Making Choices 
+
+Have programs make choices based on the values they are manipulating. (python-conditionals.ipynb) 
+
+*Topics:* RGB color schemes, tuples, conditional statements
+  
+
+### 5. Testing and Defensive Programming
+
+Know the how, why and when of testing your code and programming defensively. (python-testing.ipynb)
+
+*Topics:* unit testing, assertions
+  
+
+### 6. Errors
+
+(python-errors.ipynb)
+
+*Topics:* debugger tools  
+  
+
+### 7. Interacting with the Command Line
 
 Write code that allows the user to specify options at the command line, so you don't have 
-to manually edit your code every time you want to make a minor change.
-* Topics: parsing the command line, help documentation
-  
----  
-**8. Number Crunching** (python-numerical.ipynb) 
+to manually edit your code every time you want to make a minor change. (python-cmdline.ipynb)
 
-Tips to speed up your code and avoid bugs when dealing with numbers. 
-* Topics: linear algebra, numerical data types, matrix programming, floating point 
-  arithmetic
+*Topics:* parsing the command line, help documentation
+  
+
+### 8. Number Crunching 
+
+Make use of libraries that have been optimised to handle large numeric arrays quickly and reliably.
+Be aware of the issues associated with floating point arithmetic. (python-numerical.ipynb)
+
+*Topics:* linear algebra, numerical data types, matrix programming, floating point arithmetic
