@@ -13,6 +13,7 @@ TEACHING
   - Or use nbviewer: http://nbviewer.ipython.org/urls/raw.github.com/swcarpentry/bc/gh-pages/lessons/swc-python/python-02-loops-indexing.ipynb
 - Development lesson material (version 5): https://github.com/swcarpentry/bc/tree/gh-pages/lessons
 - Greg's development lesson material: https://github.com/gvwilson/bc/tree/gh-pages/python/novice
+- YouTube recording of an entire bootcamp: http://www.youtube.com/playlist?list=PLhFTuW7KWApwoo2DHzpWLhA19zenWF1LF
 - Instructors guide: https://github.com/swcarpentry/guide
 - CoE Git: http://walesnix.earthsci.unimelb.edu.au/~mrezny/gitTutorial/index.html
 - CoE install guide: http://software-carpentry.org/bootcamps/2013-02-14-amos/index.html
