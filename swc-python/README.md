@@ -32,7 +32,8 @@ Lessons
 -------
 
 Each label has the prefix 'c' or 'e', depending on whether the lesson is core content delivered at all
-bootcamps or an optional extra depending on time constraints and the characteristics of the audience.
+bootcamps or an optional extra depending on time constraints and the characteristics of the audience. The
+core content takes about half a day to deliver.
 
 ### c1. Introduction to Data Analysis
 
