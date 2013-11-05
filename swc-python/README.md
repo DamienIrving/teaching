@@ -14,6 +14,9 @@ programming depends on. We use Python in our lessons because:
 3.  it has a large (and growing) user base among scientists; and
 4.  experience shows that it's easier for novices to pick up than most other languages.
 
+See [here](http://drclimate.wordpress.com/2013/06/11/picking-the-right-programming-language/) for a discussion
+of how Python compares to the many other programming languages out there.
+
 Each lesson is saved as a separate IPython notebook. To download and view them,
 first clone my teaching repository,
 
@@ -28,7 +31,10 @@ then navigate to this directory and fire up the IPython notebook:
 Lessons
 -------
 
-### 1. Introduction to Data Analysis
+Each label has the prefix 'c' or 'e', depending on whether the lesson is core content delivered at all
+bootcamps or an optional extra depending on time constraints and the characteristics of the audience.
+
+### c1. Introduction to Data Analysis
 
 An introductory example of how to perform typical data analysis tasks in Python. (python-intro.ipynb)
 
@@ -37,42 +43,44 @@ methods/members (classes), reading and storing data, variable assignment, indexi
 (including slice and stride), basic plotting, array operations
   
   
-### 2. Creating Functions
+### c2. Creating Functions
 
 Use functions to make code easier to re-use and easier to understand. (python-functions.ipynb) 
 
 *Topics:* defining functions, the call stack, doc strings, positional and keyword arguments 
   
 
-### 3. Analysing Multiple Datasets
+### c3. Analysing Multiple Datasets
 
 Use lists and arrays to store related values, and loops to repeat operations on them. (python-loops.ipynb)
 
 *Topics:* loops, lists
   
 
-### 4. Making Choices 
+### c4. Making Choices 
 
 Have programs make choices based on the values they are manipulating. (python-conditionals.ipynb) 
 
 *Topics:* RGB color schemes, tuples, conditional statements
   
 
-### 5. Testing and Defensive Programming
+### c5. Testing and Defensive Programming
 
-Know the how, why and when of testing your code and programming defensively. (python-testing.ipynb)
+Know the how, why and when of testing your code (summarised 
+[here](http://drclimate.wordpress.com/2013/10/10/testing-your-code/)) and programming defensively. 
+(python-testing.ipynb)
 
-*Topics:* unit testing, assertions
+*Topics:* assertions, exception handling, unit testing, test driven development, code coverage
   
 
-### 6. Errors
+### c6. Errors
 
 (python-errors.ipynb)
 
 *Topics:* debugger tools  
   
 
-### 7. Interacting with the Command Line
+### c7. Interacting with the Command Line
 
 Write code that allows the user to specify options at the command line, so you don't have 
 to manually edit your code every time you want to make a minor change. (python-cmdline.ipynb)
@@ -80,9 +88,21 @@ to manually edit your code every time you want to make a minor change. (python-c
 *Topics:* parsing the command line, help documentation
   
 
-### 8. Number Crunching 
+### e1. Number Crunching 
 
 Make use of libraries that have been optimised to handle large numeric arrays quickly and reliably.
 Be aware of the issues associated with floating point arithmetic. (python-numerical.ipynb)
 
 *Topics:* linear algebra, numerical data types, matrix programming, floating point arithmetic
+
+
+### e2. Data Management
+
+Your data should contain sufficient metadata to be self describing. (python-data-mx.ipynb)
+
+*Topics:* metadata, [CF compliance](http://drclimate.wordpress.com/2013/02/25/are-you-cf-compliant/),  
+
+
+### e3. Regular Expressions
+
+(yet to be written)
