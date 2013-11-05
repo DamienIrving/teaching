@@ -5,9 +5,10 @@ Conclusion
 * [Stack Overflow](http://stackoverflow.com/)
 * The Software Carpentry [online lessons](http://software-carpentry.org/v4/index.html)
 * Most programming languages/packages have their own mailing lists, user groups,
-  and conferences (e.g. [PyConAu](http://2014.pycon-au.org/))  
+  and conferences (e.g. [PyConAu](http://2014.pycon-au.org/))    
 
 **Parting words of wisdom...**
+
 1. *It's worth investing the time to improve your programming.* The real bottleneck in today's 
 computing is not our machines: it's between our ears. The time required to solve a problem is the sum
 of the time required to write correct code and the time spent running it. While computers are getting
