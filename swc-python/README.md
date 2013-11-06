@@ -2,12 +2,10 @@ Python teaching content
 =======================
 
 This directory contains the Python related content that I teach to novice (or beginner 
-level) users at Software Carpentry bootcamps. The best way to learn how to program is to 
-do something useful, so this introduction to Python is built around a common scientific 
-task: data analysis.
+level) users at Software Carpentry bootcamps. 
 
-Our real goal isn't to teach you Python, but to teach you the basic concepts that all 
-programming depends on. We use Python in our lessons because:
+It should be noted that the real goal isn't to teach Python, but to teach the basic concepts that all 
+programming depends on. We simply use Python in our lessons because:
 
 1.  we have to use *something* for examples;
 2.  it's free, well-documented, and runs almost everywhere;
