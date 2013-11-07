@@ -33,8 +33,8 @@ be able to use it again whenever she collects more data.
 
 ### A more comprehensive justification
 
-That's a pretty compelling example, however a programmer might argue that you could also 
-automate Nelle's analysis by writing an appropriate Python script. A more complete 
+That's a pretty compelling example, however an experienced programmer might argue that you 
+could also automate Nelle's analysis by writing an appropriate Python script. A more complete 
 justification for learning the shell would therefore be that *so much else depends on it*. 
 Installing software (like Python), configuring your default text editor, and controlling 
 remote machines (e.g. printers) frequently assume a basic familiarity with the shell. Many 
@@ -78,3 +78,36 @@ familiar with browsing the file system via GUIs like Windows Explorer or Finder.
 
 In the bash shell, there are several commands for creating, inspecting, renaming, and 
 deleting files and directories. 
+
+To begin, let's find out where we are by running a command called `pwd` (which stands for 
+"print working directory"). At any moment, our current working directory is our current 
+default directory, i.e., the directory that the computer assumes we want to run commands 
+in unless we explicitly specify something else. Here, the computer's response is 
+`/Users/dbirving`, which is my home directory: 
+
+```
+$ pwd
+/Users/dbirving
+$
+```
+
+To understand what a "home directory" is, let's have a look at how the file system as a 
+whole is organized. At the top is the root directory that holds everything else the 
+computer is storing. We refer to it using a slash character `/` on its own; this is the 
+leading slash in `/Users/dbirving`. 
+
+![A typical file system](filesystem.png)
+
+Inside that directory (or underneath it, if you're drawing a tree) are several other 
+directories. The names of these will be slightly different from computer to computer, but
+typically consist of directories like `bin` or `usr` (which is where some built-in 
+programs are stored), `users` (where users' personal directories are located), `tmp` (for
+temporary files that don't need to be stored long-term), and so on. For instance, we can 
+see that Python is stored in the `usr` directory:
+
+```
+$ which python
+/usr/bin/anaconda/bin/python
+$
+``` 
+
