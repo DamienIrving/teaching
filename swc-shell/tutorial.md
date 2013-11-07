@@ -55,7 +55,8 @@ computer, and the computer sends output directly to the user. In fact, there is 
 program in between called a command shell. What the user types goes into the shell; it 
 figures out what commands to run and orders the computer to execute them. 
 
-FIXME: Figure
+![command_shell](command_shell.svg)
+Relationship between user, shell and computer.
 
 A shell is a program like any other. What's special about it is that its job is to run 
 other programs, rather than to do calculations itself. The most popular Unix shell is 
@@ -92,18 +93,19 @@ $
 ```
 
 To understand what a "home directory" is, let's have a look at how the file system as a 
-whole is organized. At the top is the root directory that holds everything else the 
-computer is storing. We refer to it using a slash character `/` on its own; this is the 
-leading slash in `/Users/dbirving`. 
+whole is typically organized:  
 
 ![A typical file system](filesystem.png)
+A typical file system.
 
-Inside that directory (or underneath it, if you're drawing a tree) are several other 
-directories. The names of these will be slightly different from computer to computer, but
-typically consist of directories like `bin` or `usr` (which is where some built-in 
-programs are stored), `users` (where users' personal directories are located), `tmp` (for
-temporary files that don't need to be stored long-term), and so on. For instance, we can 
-see that Python is stored in the `usr` directory:
+At the top is the root directory that holds everything else the computer is storing. We 
+refer to it using a slash character `/` on its own; this is the leading slash in 
+`/Users/dbirving`. Inside that directory (or underneath it, if you're drawing a tree) are 
+several other directories. The names of these will be slightly different from computer to 
+computer, but typically consist of directories like `bin` or `usr` (which is where some 
+built-in programs are stored), `users` (where users' personal directories are located), 
+`tmp` (for temporary files that don't need to be stored long-term), and so on. For 
+instance, we can see that Python is stored in the `usr` directory:
 
 ```
 $ which python
@@ -111,3 +113,11 @@ $ which python
 $
 ``` 
 
+Notice that there are two meanings for the / character. When it appears at the front of a 
+file or directory name, it refers to the root directory. When it appears inside a name, 
+it's just a separator. 
+
+Now that we understand the layout of the file system, we can use the `ls` and `cd` 
+commands to view the contents of directories and move about.
+
+INTRODUCE: `ls -G`, `ls -l -a`, `cd`, `cd ..`
