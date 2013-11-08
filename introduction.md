@@ -55,3 +55,12 @@ this stuff, which makes them better teachers.
 For a more in depth discussion of the history, syllabus and benefits of Software Carpentry, 
 check out this [talk I gave at PyCon Australia](http://pyvideo.org/video/2230/software-carpentry-arrives-down-under).
 
+
+What is the teaching format?
+---
+The syllabus is delivered via lecture/demonstration interspersed with regular challenges to be worked on in pairs.
+During the lectures, you can either:
+* View the lecture notes (available in this repository)
+* Open a terminal window or IPython notebook and follow along
+* Do nothing but sit back and watch
+* A combination of the above
