@@ -18,12 +18,12 @@ of how Python compares to the many other programming languages out there.
 Each lesson is saved as a separate IPython notebook. To view these notebooks, you can 
 either navigate to associated nbviewer page, 
 
-[python-intro.ipynb](http://nbviewer.ipython.org/7377608)
-[python-functions.ipynb](http://nbviewer.ipython.org/7377756)
-[python-loops.ipynb](http://nbviewer.ipython.org/7377798)
-[python-conditionals.ipynb](http://nbviewer.ipython.org/7377885)
-[python-testing.ipynb](http://nbviewer.ipython.org/7377947)
-[python-cmdline.ipynb](http://nbviewer.ipython.org/7378005)
+[python-intro.ipynb](http://nbviewer.ipython.org/7377608)  
+[python-functions.ipynb](http://nbviewer.ipython.org/7377756)  
+[python-loops.ipynb](http://nbviewer.ipython.org/7377798)  
+[python-conditionals.ipynb](http://nbviewer.ipython.org/7377885)  
+[python-testing.ipynb](http://nbviewer.ipython.org/7377947)  
+[python-cmdline.ipynb](http://nbviewer.ipython.org/7378005)  
 
 or clone my teaching repository,
 
