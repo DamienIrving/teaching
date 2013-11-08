@@ -55,8 +55,7 @@ computer, and the computer sends output directly to the user. In fact, there is 
 program in between called a command shell. What the user types goes into the shell; it 
 figures out what commands to run and orders the computer to execute them. 
 
-![command_shell](command_shell.svg)
-Relationship between user, shell and computer.
+FIGURE: Relationship between user, shell and computer.
 
 A shell is a program like any other. What's special about it is that its job is to run 
 other programs, rather than to do calculations itself. The most popular Unix shell is 
@@ -113,11 +112,16 @@ $ which python
 $
 ``` 
 
-Notice that there are two meanings for the / character. When it appears at the front of a 
+Notice that there are two meanings for the `/` character. When it appears at the front of a 
 file or directory name, it refers to the root directory. When it appears inside a name, 
 it's just a separator. 
 
 Now that we understand the layout of the file system, we can use the `ls` and `cd` 
 commands to view the contents of directories and move about.
 
-INTRODUCE: `ls -G`, `ls -l -a`, `cd`, `cd ..`
+INTRODUCE: `ls -G -F -a -l -t`, `cd`, `cd ..`, relative versus absolute paths
+
+
+### Why does my Windows shell look different?
+
+
