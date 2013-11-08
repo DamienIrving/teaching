@@ -7,15 +7,21 @@ ATTENDANCE LIST
 
 FAQ's
 
-Where can I get the 'lecture' notes?
-- GitHub: https://github.com/DamienIrving/teaching
-
 What was the website URL again?
 - http://damienirving.github.io/2013-11-25-unimelb/
+
+What is the teaching format?
+- Lecture/demonstration interspersed with regular 
+  challenges to be worked on in pairs
+
+What are my options doing during the lectures?
+- View the online lecture notes (https://github.com/DamienIrving/teaching)
+- Open a terminal window or IPython notebook and follow along
+- Do nothing but watch
+- A combination of the above
 
 
 RESOURCES
 
 - Explain shell: http://explainshell.com/
-- Blog post on code testing: http://drclimate.wordpress.com/2013/10/10/testing-your-code/
 

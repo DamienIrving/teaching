@@ -15,12 +15,21 @@ programming depends on. We simply use Python in our lessons because:
 See [here](http://drclimate.wordpress.com/2013/06/11/picking-the-right-programming-language/) for a discussion
 of how Python compares to the many other programming languages out there.
 
-Each lesson is saved as a separate IPython notebook. To download and view them,
-first clone my teaching repository,
+Each lesson is saved as a separate IPython notebook. To view these notebooks, you can 
+either navigate to associated nbviewer page, 
+
+[python-intro.ipynb](http://nbviewer.ipython.org/7377608)
+[python-functions.ipynb](http://nbviewer.ipython.org/7377756)
+[python-loops.ipynb](http://nbviewer.ipython.org/7377798)
+[python-conditionals.ipynb](http://nbviewer.ipython.org/7377885)
+[python-testing.ipynb](http://nbviewer.ipython.org/7377947)
+[python-cmdline.ipynb](http://nbviewer.ipython.org/7378005)
+
+or clone my teaching repository,
 
     git clone https://github.com/DamienIrving/teaching.git
 
-then navigate to this directory and fire up the IPython notebook:
+then navigate to the `swc-python` directory and fire up the IPython notebook:
 
     cd teaching/swc-python/
     ipython notebook &
