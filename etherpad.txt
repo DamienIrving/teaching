@@ -10,16 +10,6 @@ FAQ's
 What was the website URL again?
 - http://damienirving.github.io/2013-11-25-unimelb/
 
-What is the teaching format?
-- Lecture/demonstration interspersed with regular 
-  challenges to be worked on in pairs
-
-What are my options doing during the lectures?
-- View the online lecture notes (https://github.com/DamienIrving/teaching)
-- Open a terminal window or IPython notebook and follow along
-- Do nothing but watch
-- A combination of the above
-
 
 RESOURCES
 
