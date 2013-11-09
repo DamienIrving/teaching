@@ -24,6 +24,7 @@ either navigate to associated nbviewer page,
 [python-conditionals.ipynb](http://nbviewer.ipython.org/7377885)  
 [python-testing.ipynb](http://nbviewer.ipython.org/7377947)  
 [python-cmdline.ipynb](http://nbviewer.ipython.org/7378005)  
+[python-numerical.ipynb](http://nbviewer.ipython.org/7390647)  
 
 or clone my teaching repository,
 
