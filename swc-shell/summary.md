@@ -26,18 +26,21 @@ Refer to the sketched file system when answering the following questions
 ![Example filesystem](filedir_challenge.png)  
 
 1. If `pwd` displays `/users/thing`, what will `ls ../backup` display?  
-    a. `../backup: No such file or directory`  
-    b. `2012-12-01 2013-01-08 2013-01-27`  
-    c. `2012-12-01/ 2013-01-08/ 2013-01-27/`  
-    d. `original pnas_final pnas_sub`  
+  a. `../backup: No such file or directory`  
+  b. `2012-12-01 2013-01-08 2013-01-27`  
+  c. `2012-12-01/ 2013-01-08/ 2013-01-27/`  
+  d. `original pnas_final pnas_sub`  
 
-2. If `pwd` displays `/users/backup`, what command will display `original/ pnas_sub/ pnas_final/`?   
-    a. `ls pwd`
-    b. `ls -r -F`
-    c. `ls -r -F /users/backup`
-    d. Either b or c, but not a
+2. If `pwd` displays `/users/backup`, what command will display  
 
-3. What does the command `cd` without a directory name do?
+    original/ pnas_sub/ pnas_final/
+       
+  a. `ls pwd`  
+  b. `ls -r -F`  
+  c. `ls -r -F /users/backup`  
+  d. Either b or c, but not a  
+
+3. What does the command `cd` without a directory name do?  
     a. It has no effect  
     b. It changes the working directory to `/`  
     c. It changes the working directory to the user's home directory  
@@ -62,47 +65,25 @@ Refer to the sketched file system when answering the following questions
 
 #### Challenges
 
-1. What is the output of the closing ls command in the sequence shown below?  
+1. What is the output of the closing `ls` command in the sequence shown below?  
 
-    $ pwd
-    /home/thing/data
-    $ ls
-    proteins.dat
-    $ mkdir recombine
-    $ mv proteins.dat recombine
-    $ cp recombine/proteins.dat ../proteins-saved.dat
-    $ ls
+```
+$ pwd
+/home/thing/data
+    
+$ ls
+proteins.dat
+    
+$ mkdir recombine
+    
+$ mv proteins.dat recombine
+    
+$ cp recombine/proteins.dat ../proteins-saved.dat
+    
+$ ls
+```
 
-2. Suppose that:  
-
-    $ ls -F
-    analyzed/  fructose.dat    raw/   sucrose.dat
-
-What command(s) could you run so that the commands below will produce the output shown?
-
-    $ ls
-    analyzed   raw
-    $ ls analyzed
-    fructose.dat    sucrose.dat
-
-3. What does `cp` do when given several filenames and a directory name, as in:  
-
-    $ mkdir backup
-    $ cp thesis/citations.txt thesis/quotations.txt backup
-
-What does `cp` do when given three or more filenames, as in:
-
-    $ ls -F
-    intro.txt    methods.txt    survey.txt
-    $ cp intro.txt methods.txt survey.txt
-
-Why do you think cp's behavior is different from mv's?
-
-4. The command `ls -R` lists the contents of directories recursively, i.e., lists their 
-sub-directories, sub-sub-directories, and so on in alphabetical order at each level. The 
-command ls -t lists things by time of last change, with most recently changed files or 
-directories first. In what order does `ls -R -t` display things?
-
+2. FIX ME: More questions required.
 
 
 ## Pipes and filters
@@ -124,6 +105,97 @@ directories first. In what order does `ls -R -t` display things?
 * `wc` counts lines, words, and characters in its inputs.
 
 #### Challenges
+
+1. If we run sort on each of the files shown on the left in the table below, 
+   without the -n flag, the output is as shown on the right:
+
+```
+1    1
+10   10
+2    19
+19   2
+22   22
+6    6
+
+ 1    1
+10    2
+ 2    6
+19   10
+22   19
+ 6   22
+```
+
+Explain why we get different answers for the two files.
+
+2. What is the difference between:
+
+```
+wc -l < *.dat
+```
+and:
+
+```
+wc -l *.dat
+```
+
+3. The command `uniq` removes adjacent duplicated lines from its input. For example, if 
+a file `salmon.txt` contains:
+```
+    coho
+    coho
+    steelhead
+    coho
+    steelhead
+    steelhead
+```
+then `uniq salmon.txt` produces:
+
+```
+    coho
+    steelhead
+    coho
+    steelhead
+```
+
+Why do you think `uniq` only removes adjacent duplicated lines? (Hint: think about very 
+large data sets.) What other command could you combine with it in a pipe to remove all 
+duplicated lines?
+
+4.  A file called animals.txt contains the following data:
+
+```
+2012-11-05,deer
+2012-11-05,rabbit
+2012-11-05,raccoon
+2012-11-06,rabbit
+2012-11-06,deer
+2012-11-06,fox
+2012-11-07,rabbit
+2012-11-07,bear
+```
+Write down what lines of text pass through each pipe in the pipeline below.
+```
+cat animals.txt 	| 	head -5 	| 	tail -3 	| 	sort -r 	> 	final.txt
+```    								
+
+5. The command:
+```
+$ cut -d , -f 2 animals.txt
+```
+produces the following output:
+```
+    deer
+    rabbit
+    raccoon
+    rabbit
+    deer
+    fox
+    rabbit
+    bear
+```
+
+What other command(s) could be added to this in a pipeline to find out what animals have 
+been seen (without any duplicates in the animals' names)?
 
 
 ## Loops
