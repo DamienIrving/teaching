@@ -124,7 +124,7 @@ Refer to the sketched file system when answering the following questions
     6   22
    ```
 
-Explain why we get different answers for the two files.
+   Explain why we get different answers for the two files.
 
 2. What is the difference between:
 
@@ -138,7 +138,7 @@ Explain why we get different answers for the two files.
    ```
 
 3. The command `uniq` removes adjacent duplicated lines from its input. For example, if 
-a file `salmon.txt` contains:  
+   a file `salmon.txt` contains:  
 
    ```
    coho
@@ -161,7 +161,7 @@ a file `salmon.txt` contains:
    large data sets.) What other command could you combine with it in a pipe to remove all 
    duplicated lines?
 
-4.  A file called animals.txt contains the following data:
+4. A file called animals.txt contains the following data:
 
    ```
    2012-11-05,deer
@@ -213,6 +213,104 @@ a file `salmon.txt` contains:
 
 #### Challenges
 
+1. Suppose that `ls` initially displays:
+
+   ```
+   fructose.dat    glucose.dat   sucrose.dat
+   ```
+   
+   What is the output of:
+
+   ```
+   for datafile in *.dat
+   do
+       ls *.dat
+   done
+   ```
+   
+2. In the same directory as above, what is the effect of this loop?
+
+   ```
+   for sugar in *.dat
+   do
+       echo $sugar
+       cat $sugar > xylose.dat
+   done
+   ```
+   a. Prints `fructose.dat`, `glucose.dat`, and `sucrose.dat`, and copies `sucrose.dat` 
+      to create `xylose.dat`.  
+   b. Prints `fructose.dat`, `glucose.dat`, and `sucrose.dat`, and concatenates all three 
+      files to create `xylose.dat`.  
+   c. Prints `fructose.dat`, `glucose.dat`, `sucrose.dat`, and `xylose.dat`, and copies 
+      `sucrose.dat` to create `xylose.dat`.  
+   d. None of the above.  
+
+3. The `expr` command does simple arithmetic using command-line parameters:
+
+   ```
+   $ expr 3 + 5
+   8
+   $ expr 30 / 5 - 2
+   4
+   ```
+   Given this, what is the output of:
+   
+   ```
+   for left in 2 3
+   do
+       for right in $left
+       do
+           expr $left + $right
+       done
+   done
+   ```
+
+4. Describe in words what the following loop does.
+
+   ```
+   for how in frog11 prcb redig
+   do
+       $how -limit 0.01 NENE01729B.txt
+   done
+   ```
+   
+5. The loop:
+
+   ```
+   for num in {1..3}
+   do
+       print $num
+   done
+   ```
+
+   prints:
+
+   ```
+   1
+   2
+   3
+   ```
+   However, the loop:
+
+   ```
+   for num in {0.1..0.3}
+   do
+       print $num
+   done
+   ```
+   prints:
+
+   ```
+   {0.1..0.3}
+   ```
+   Write a loop that prints:
+   ```
+   0.1
+   0.2
+   0.3
+   ```
+
+
 ## Shell scripts
 
 #### Summary
@@ -225,6 +323,56 @@ a file `salmon.txt` contains:
   built-in Unix commands.
 
 #### Challenges
+
+1. Leah has several hundred data files, each of which is formatted like this:
+
+   ```
+   2013-11-05,deer,5
+   2013-11-05,rabbit,22
+   2013-11-05,raccoon,7
+   2013-11-06,rabbit,19
+   2013-11-06,deer,2
+   2013-11-06,fox,1
+   2013-11-07,rabbit,18
+   2013-11-07,bear,1
+   ```
+   Write a shell script called `species.sh` that takes any number of filenames as 
+   command-line parameters, and uses `cut`, `sort`, and `uniq` to print a list of the 
+   unique species appearing in each of those files separately.
+
+2. Write a shell script called `longest.sh` that takes the name of a directory and a 
+   filename extension as its parameters, and prints out the name of the most recently 
+   modified file in that directory with that extension. For example:
+   
+   ```
+   $ bash largest.sh /tmp/data pdb
+   ```
+   
+   would print the name of the PDB file in `/tmp/data` that has been changed most recently.
+
+3. If you run the command:
+
+   ```
+   history | tail -5 > recent.sh
+   ```
+
+   the last command in the file is the history command itself, i.e., the shell has added 
+   history to the command log before actually running it. In fact, the shell always adds 
+   commands to the log before running them. Why do you think it does this?
+
+4. Joel's data directory contains three files: `fructose.dat`, `glucose.dat`, and 
+   `sucrose.dat`. Explain what each of the following shell scripts does when run as 
+   `bash scriptname *.dat`.
+
+   a. `echo *.*`  
+   b.
+   ```
+   for filename in $1 $2 $3
+   do
+       cat $filename
+   done
+   ```  
+   c. `echo $*.dat`
 
 
 ## Finding things
@@ -242,9 +390,69 @@ a file `salmon.txt` contains:
 
 #### Challenges
 
+1. The `middle.sh` script's numerical parameters are the number of lines to take from the 
+   head of the file, and the number of lines to take from the tail of that range. It 
+   would be more intuitive if the parameters were the index of the first line to keep and 
+   the number of lines, e.g., if:
+   
+   ```
+   $ bash middle.sh somefile 50 5
+   ```
+   selected lines 50-54 instead of lines 46-50. Use `$()` and the `expr` command to do 
+   this.
+
+2. Write a short explanatory comment for the following shell script:  
+
+   ```
+   find . -name '*.dat' -print | wc -l | sort -n
+   ```
+
+3. The `-v` flag to `grep` inverts pattern matching, so that only lines which do not 
+   match the pattern are printed. Given that, which of the following commands will find 
+   all files in `/data` whose names end in `ose.dat` (e.g., `sucrose.dat` or `maltose.dat`), 
+   but do not contain the word temp?
+
+   a. `find /data -name '*.dat' -print | grep ose | grep -v temp`
+   b. `find /data -name ose.dat -print | grep -v temp`
+   c. `grep -v temp $(find /data -name '*ose.dat' -print)`
+   d. None of the above.
+
+4. Nelle has saved the IDs of some suspicious observations in a file called 
+   `maybe-faked.txt`:
+   
+   ```
+   NENE01909C
+   NEMA04220A
+   NEMA04301A
+   ```
+
+   Which of the following scripts will search all of the .txt files whose names begin 
+   with NE for references to these records?
+
+   a.
+   ```
+   for pat in maybe-faked.txt
+   do
+       find . -name 'NE*.txt' -print | grep $pat
+   done
+   ```
+   
+   b.
+   ``` 	
+   for pat in $(cat maybe-faked.txt)
+   do
+       grep $pat $(find . -name 'NE*.txt' -print)
+   done
+   ```
+   
+   c. 	
+
+   ```
+   for pat in $(cat maybe-faked.txt)
+   do
+       find . -name 'NE*.txt' -print | grep $pat
+   done
+   ```
+
+   d. None of the above. 
  
-
-
-
-
-
