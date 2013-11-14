@@ -1,3 +1,5 @@
+https://etherpad.mozilla.org/swc-unimelb
+
 Welcome to the Software Carpentry Bootcamp
 
 ATTENDANCE LIST
@@ -9,6 +11,9 @@ FAQ's
 
 What was the website URL again?
 - http://damienirving.github.io/2013-11-25-unimelb/
+
+Where are the lecture notes?
+- https://github.com/DamienIrving/teaching
 
 
 RESOURCES
