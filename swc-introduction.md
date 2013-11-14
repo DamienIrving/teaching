@@ -64,3 +64,8 @@ During the lectures, you can either:
 * Open a terminal window or IPython notebook and follow along
 * Do nothing but sit back and watch
 * A combination of the above
+
+At any point during the bootcamp it's inevitable that some people will be finding
+the material too easy, while others will be struggling to keep up. In this case the former
+should help the latter - Software Carpentry is as much about fostering supportive 
+computing communities as it is about actually teaching the nuts and bolts of programming. 
