@@ -1,11 +1,11 @@
 Python teaching content
 =======================
 
-This directory contains the Python related content that I teach to novice (or beginner 
-level) users at Software Carpentry bootcamps. 
+This directory contains the Python related content that I teach at Software Carpentry 
+bootcamps. 
 
-It should be noted that the real goal isn't to teach Python, but to teach the basic concepts that all 
-programming depends on. We simply use Python in our lessons because:
+It should be noted that the real goal isn't to teach Python, but to teach the basic 
+concepts that all programming depends on. We simply use Python in our lessons because:
 
 1.  we have to use *something* for examples;
 2.  it's free, well-documented, and runs almost everywhere;
@@ -32,79 +32,82 @@ or clone my teaching repository,
 
 then navigate to the `swc-python` directory and fire up the IPython notebook:
 
-    cd teaching/swc-python/
+    cd teaching/swc-python/novice
     ipython notebook &
 
 
 Lessons
 -------
 
-Each label has the prefix 'c' or 'e', depending on whether the lesson is core content delivered at all
-bootcamps or an optional extra depending on time constraints and the characteristics of the audience. The
-core content takes about half a day to deliver.
+### 1. Introduction to Data Analysis
 
-### c1. Introduction to Data Analysis
-
-An introductory example of how to perform typical data analysis tasks in Python. (python-intro.ipynb)
+An introductory example of how to perform typical data analysis tasks in Python. 
+(novice/python-intro.ipynb)
 
 *Topics:* importing libraries/modules, calling functions/attributes (modules) or 
 methods/members (classes), reading and storing data, variable assignment, indexing 
 (including slice and stride), basic plotting, array operations
   
   
-### c2. Creating Functions
+### 2. Creating Functions
 
-Use functions to make code easier to re-use and easier to understand. (python-functions.ipynb) 
+Use functions to make code easier to re-use and easier to understand. 
+(novice/python-functions.ipynb) 
 
 *Topics:* defining functions, the call stack, doc strings, positional and keyword arguments 
   
 
-### c3. Analysing Multiple Datasets
+### 3. Analysing Multiple Datasets
 
-Use lists and arrays to store related values, and loops to repeat operations on them. (python-loops.ipynb)
+Use lists and arrays to store related values, and loops to repeat operations on them. 
+(novice/python-loops.ipynb)
 
 *Topics:* loops, lists
   
 
-### c4. Making Choices 
+### 4. Making Choices 
 
-Have programs make choices based on the values they are manipulating. (python-conditionals.ipynb) 
+Have programs make choices based on the values they are manipulating. 
+(novice/python-conditionals.ipynb) 
 
 *Topics:* RGB color schemes, tuples, conditional statements
   
 
-### c5. Getting the Right Answer
+### 5. Getting the Right Answer
 
 Know the how, why and when of testing your code (summarised 
-[here](http://drclimate.wordpress.com/2013/10/10/testing-your-code/)) and programming defensively. 
-(python-testing.ipynb)
+[here](http://drclimate.wordpress.com/2013/10/10/testing-your-code/)) and programming 
+defensively. (novice/python-testing.ipynb)
 
 *Topics:* assertions, exception handling, unit testing, test driven development
   
 
-### c6. Command Line Programs
+### 6. Command Line Programs
 
 Write code that allows the user to specify options at the command line, so you don't have 
-to manually edit your code every time you want to make a minor change. (python-cmdline.ipynb)
+to manually edit your code every time you want to make a minor change. 
+(novice/python-cmdline.ipynb)
 
 *Topics:* parsing the command line
   
 
-### e1. Number Crunching 
+### Number Crunching 
 
 Make use of libraries that have been optimised to handle large numeric arrays quickly and reliably.
-Be aware of the issues associated with floating point arithmetic. (python-numerical.ipynb)
+Be aware of the issues associated with floating point arithmetic. 
+(intermediate/python-numerical.ipynb)
 
 *Topics:* linear algebra, numerical data types, matrix programming, floating point arithmetic
 
 
-### e2. Data Management
+### Data Management
 
-Your data should contain sufficient metadata to be self describing. (python-data-mx.ipynb)
+Your data should contain sufficient metadata to be self describing. 
+(intermediate/python-data-management.ipynb)
 
 *Topics:* metadata, [CF compliance](http://drclimate.wordpress.com/2013/02/25/are-you-cf-compliant/),  
 
 
-### e3. Regular Expressions
+### Regular Expressions
 
 (yet to be written)
