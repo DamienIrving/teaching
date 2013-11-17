@@ -18,5 +18,6 @@ Where are the lecture notes?
 
 RESOURCES
 
+- Standard input: http://www.linfo.org/standard_input.html
 - Explain shell: http://explainshell.com/
 
