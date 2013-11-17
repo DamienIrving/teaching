@@ -5,9 +5,9 @@ Getting help post-bootcamp
 ---
 
 * [Stack Overflow](http://stackoverflow.com/)
-* [Software Carpentry online lessons](http://software-carpentry.org/v4/index.html)
-* Most programming languages/packages have their own mailing lists, user groups,
-  and conferences (e.g. [PyConAu](http://2014.pycon-au.org/))    
+* [Software Carpentry forum](http://software-carpentry.org/blog/2013/11/creating-a-forum.html)
+* Most programming languages/packages have their own mailing lists, user groups, support forums
+  and/or conferences (e.g. [PyConAu](http://2014.pycon-au.org/))    
 
 Parting words of wisdom
 ---
