@@ -18,6 +18,7 @@ TEACHING
 - Instructors guide: https://github.com/swcarpentry/guide
 - CoE Git: http://walesnix.earthsci.unimelb.edu.au/~mrezny/gitTutorial/index.html
 - CoE install guide: http://software-carpentry.org/bootcamps/2013-02-14-amos/index.html
+- GitHub training materials: http://teach.github.com/
 
 - Etherpad: https://etherpad.mozilla.org/swc-tutorial-1
 
