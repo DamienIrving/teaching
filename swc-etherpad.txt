@@ -9,6 +9,10 @@ ATTENDANCE LIST
 
 FAQ's
 
+How can I connect to the internet?
+- UniMelb students: UniWireless
+- Monash students: eduroam (or get a UniMelb student to log you into UniWireless)
+
 What was the website URL again?
 - http://damienirving.github.io/2013-11-25-unimelb/
 
