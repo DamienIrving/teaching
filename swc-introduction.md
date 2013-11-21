@@ -48,7 +48,7 @@ Who is this guy teaching us?
 ---
 Similar to most [qualified](http://software-carpentry.org/badges/index.html) Software Carpentry instructors, I'm a 
 research scientist and not a professional software developer (see my 
-[bio](http://drclimate.wordpress.com/who-is-dr-climate/)). This avoids a well-known teaching phenomenon called 
+[bio](https://github.com/DamienIrving/CV/blob/master/CV.md)). This avoids a well-known teaching phenomenon called 
 *expert blind spot*. In other words, Software Carpentry instructors can still remember what it's like to not understand 
 this stuff, which makes them better teachers.
 
