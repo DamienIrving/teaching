@@ -59,11 +59,9 @@ check out this [talk I gave at PyCon Australia](http://pyvideo.org/video/2230/so
 What is the teaching format?
 ---
 The syllabus is delivered via lecture/demonstration interspersed with regular challenges to be worked on in pairs.
-During the lectures, you can either:
-* View the lecture notes (available in this repository)
-* Open a terminal window or IPython notebook and follow along
-* Do nothing but sit back and watch
-* A combination of the above
+During the lectures most people open a terminal window or IPython notebook and follow along, trying out new commands
+and ideas as they're introduced. Other people prefer just to sit back and watch. There is no need to take notes, as
+copies of all the teaching materials are available at this GitHub page.
 
 At any point during the bootcamp it's inevitable that some people will be finding
 the material too easy, while others will be struggling to keep up. In this case the former
