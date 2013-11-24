@@ -29,8 +29,3 @@ insensitive, though, which means that if you try to put files called `backup.txt
 
 MSysGit also doesn't come with `man` (the command for showing the manual for a given program), although this tends not 
 be be a problem since the `--help` flag does much the same thing in most cases.
-
-Cygwin does something else that frequently causes confusion. By default, it interprets a path like `/home/vlad` to 
-mean `C:\cygwin\home\vlad`, i.e., it acts as if `C:\cygwin` was the root of the filesystem. This is sometimes 
-helpful, but if you are using an editor like Notepad, and want to save a file in what Cygwin thinks of as your 
-home directory, you need to keep this translation in mind.
