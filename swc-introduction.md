@@ -10,20 +10,6 @@ early 2010s when it shifted to a teaching model centred around intensive two-day
 organisation). 
 
 
-Why do researchers need help with programming?
----
-1. The volume of data available to researchers is growing exponentially, which means a simple Excel 
-   spreadsheet just doesn't cut it in today's world of [big data](http://en.wikipedia.org/wiki/Big_data). 
-2. Most researchers are self taught programmers. As a result, they spend hours doing things that 
-   should take minutes, reinvent a lot of wheels, and still don't know if their results are reliable.
-3. This rapid increase in data, coupled with the low computational competency of the community, has resulted in 
-   something of an [irreproducibility crisis](http://www.nature.com/nature/focus/reproducibility/index.html) in 
-   published research. However, the world's most prominent journals are 
-   [waking up to this problem](http://drclimate.wordpress.com/2013/06/30/the-future-of-journal-submissions/), 
-   and are beginning to require that people submit their code along with their manuscript (a terrifying prospect 
-   for most researchers!).
-
-       
 What gets taught at a bootcamp?
 ---
 Our goal is to teach a handful of basic computing skills, so that researchers can get more done in less time. Our goal is 
@@ -42,6 +28,20 @@ The focus is very much on concepts, not specific tools. This means that a Matlab
 lot out of it, even if the programming content is taught using Python. Once you understand the fundamental concepts
 underpinning effective scientific computing, you can teach yourself the tools that you need to use (the reverse isn't 
 usually true).
+
+
+Why do researchers need help with programming?
+---
+1. The volume of data available to researchers is growing exponentially, which means a simple Excel 
+   spreadsheet just doesn't cut it in today's world of [big data](http://en.wikipedia.org/wiki/Big_data). 
+2. Most researchers are self taught programmers. As a result, they spend hours doing things that 
+   should take minutes, reinvent a lot of wheels, and still don't know if their results are reliable.
+3. This rapid increase in data, coupled with the low computational competency of the community, has resulted in 
+   something of an [irreproducibility crisis](http://www.nature.com/nature/focus/reproducibility/index.html) in 
+   published research. However, the world's most prominent journals are 
+   [waking up to this problem](http://drclimate.wordpress.com/2013/06/30/the-future-of-journal-submissions/), 
+   and are beginning to require that people submit their code along with their manuscript (a terrifying prospect 
+   for most researchers!).
 
 
 Who is this guy teaching us?
