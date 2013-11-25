@@ -351,7 +351,7 @@ and we will see it in many other tools as we go on.
 
 2.  If `pwd` displays `/users/backup`, what command will display
 
-        original/ pnas-final/ pnas-sub/
+        pnas-sub/ pnas-final/ original/
 
     1.  `ls pwd`
     2.  `ls -r -F`
