@@ -22,7 +22,7 @@ either navigate to associated nbviewer page,
 [02-func.ipynb](http://nbviewer.ipython.org/7572464)  
 [03-loop.ipynb](http://nbviewer.ipython.org/7572490)  
 [04-cond.ipynb](http://nbviewer.ipython.org/7572504)  
-[05-qa.ipynb](http://nbviewer.ipython.org/7572521)  
+[05-defensive.ipynb](http://nbviewer.ipython.org/7572521)  
 [06-cmdline.ipynb](http://nbviewer.ipython.org/7572536)  
 [python-numerical.ipynb](http://nbviewer.ipython.org/7572558)  
 [python-data-management.ipynb](http://nbviewer.ipython.org/7572585)
@@ -73,13 +73,13 @@ Have programs make choices based on the values they are manipulating.
 *Topics:* RGB color schemes, tuples, conditional statements
   
 
-### 5. Getting the Right Answer
+### 5. Defensive programming
 
 Know the how, why and when of testing your code (summarised 
 [here](http://drclimate.wordpress.com/2013/10/10/testing-your-code/)) and programming 
 defensively. (novice/05-qa.ipynb)
 
-*Topics:* assertions, exception handling, unit testing, test driven development
+*Topics:* assertions, unit testing, test driven development
   
 
 ### 6. Command Line Programs
