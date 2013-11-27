@@ -323,10 +323,10 @@ about them."
     end in `ose.dat` (e.g., `sucrose.dat` or `maltose.dat`), but do
     *not* contain the word `temp`?
 
-    1. `find /data -name '*.dat' -print | grep ose | grep -v temp`
+    1. `grep ose $(find /data -name '*.dat') | grep -v temp`
 
-    2. `find /data -name ose.dat -print | grep -v temp`
+    2. `grep -v temp $(find /data -name ose.dat)`
 
-    3. `grep -v temp $(find /data -name '*ose.dat' -print)`
+    3. `grep -v temp $(find /data -name '*ose.dat')`
 
-    4. None of the above.
+    4. Both (2) and (3).
