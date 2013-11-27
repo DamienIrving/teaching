@@ -77,7 +77,7 @@ Have programs make choices based on the values they are manipulating.
 
 Know the how, why and when of testing your code (summarised 
 [here](http://drclimate.wordpress.com/2013/10/10/testing-your-code/)) and programming 
-defensively. (novice/05-qa.ipynb)
+defensively. (novice/05-defensive.ipynb)
 
 *Topics:* assertions, unit testing, test driven development
   
