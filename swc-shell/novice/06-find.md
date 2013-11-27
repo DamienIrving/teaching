@@ -314,6 +314,7 @@ about them."
 
 1.  Write a short explanatory comment for the following shell script:
 
+        # comment here
         find . -name '*.dat' -print | wc -l | sort -n
 
 2.  The `-v` flag to `grep` inverts pattern matching, so that only lines
