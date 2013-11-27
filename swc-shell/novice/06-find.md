@@ -315,7 +315,7 @@ about them."
 1.  Write a short explanatory comment for the following shell script:
 
         # comment here
-        find . -name '*.dat' -print | wc -l | sort -n
+        wc -l $(find . -name '*.dat') | sort -n
 
 2.  The `-v` flag to `grep` inverts pattern matching, so that only lines
     which do *not* match the pattern are printed. Given that, which of
