@@ -19,6 +19,12 @@ What was the website URL again?
 Where are the lecture notes?
 - https://github.com/DamienIrving/teaching
 
+I can't import ipythonblocks...
+- Install ipythonblocks with either of (on the terminal or command prompt):
+  - pip install ipythonblocks
+  - easy_install ipythonblocks
+- Then you should relaunch ipython notepad
+
 
 RESOURCES
 

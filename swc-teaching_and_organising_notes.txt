@@ -12,8 +12,9 @@ TEACHING
 - Mature lesson material (version 4): http://swcarpentry.github.io/bc/lessons/index.html
   - Or use nbviewer: http://nbviewer.ipython.org/urls/raw.github.com/swcarpentry/bc/gh-pages/lessons/swc-python/python-02-loops-indexing.ipynb
 - Development lesson material (version 5): https://github.com/swcarpentry/bc/tree/gh-pages/lessons
-- Greg's development python material: https://github.com/gvwilson/bc/tree/new-python-beginner-lessons/python
-- Greg's development bash material: https://github.com/gvwilson/bc/tree/new-shell-beginner-lessons/bash
+- Greg's development novice python material: https://github.com/gvwilson/bc/tree/new-python-beginner-lessons/python
+- Greg's development novice bash material: https://github.com/gvwilson/bc/tree/new-shell-beginner-lessons/bash
+- Ethan's development intermediate python material: https://github.com/ethanwhite/bc/tree/inter-python-intro/python/intermediate
 - YouTube recording of an entire bootcamp: http://www.youtube.com/playlist?list=PLhFTuW7KWApwoo2DHzpWLhA19zenWF1LF
 - Instructors guide: https://github.com/swcarpentry/guide
 - CoE Git: http://walesnix.earthsci.unimelb.edu.au/~mrezny/gitTutorial/index.html
