@@ -91,6 +91,13 @@ to manually edit your code every time you want to make a minor change.
 *Topics:* parsing the command line
 
 
+### Extras
+
+If time permits, a masterclass/Q&A session can be held.
+
+*Topics:* debugging (pdb), exception handling (try/except), advanced command line argument handling (argparse)
+
+
 ## Intermediate lessons
   
 ### Number Crunching 
