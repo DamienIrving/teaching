@@ -24,8 +24,9 @@ either navigate to associated nbviewer page,
 [04-cond.ipynb](http://nbviewer.ipython.org/7572504)  
 [05-defensive.ipynb](http://nbviewer.ipython.org/7572521)  
 [06-cmdline.ipynb](http://nbviewer.ipython.org/7572536)  
-[python-numerical.ipynb](http://nbviewer.ipython.org/7572558)  
-[python-data-management.ipynb](http://nbviewer.ipython.org/7572585)
+[E1-data.ipynb](http://nbviewer.ipython.org/7572585)
+[E2-numerical.ipynb](http://nbviewer.ipython.org/7572558)  
+
 
 or clone my teaching repository,
 
@@ -89,34 +90,27 @@ to manually edit your code every time you want to make a minor change.
 (novice/06-cmdline.ipynb)
 
 *Topics:* parsing the command line
-
-
-### Extras
-
-If time permits, a masterclass/Q&A session can be held.
-
-*Topics:* debugging (pdb), exception handling (try/except), advanced command line argument handling (argparse)
-
-
-## Intermediate lessons
   
-### Number Crunching 
+
+### Extra 1. Data Management
+
+Your data should contain sufficient metadata to be self describing. 
+(intermediate/python-data-management.ipynb)
+
+*Topics:* metadata, [CF compliance](http://drclimate.wordpress.com/2013/02/25/are-you-cf-compliant/) 
+  
+
+### Extra 2. Number Crunching 
 
 Make use of libraries that have been optimised to handle large numeric arrays quickly and reliably.
 Be aware of the issues associated with floating point arithmetic. 
 (intermediate/python-numerical.ipynb)
 
 *Topics:* linear algebra, numerical data types, matrix programming, floating point arithmetic
+  
 
+### Masterclass
 
-### Data Management
+If time permits, a masterclass/Q&A session can be held.
 
-Your data should contain sufficient metadata to be self describing. 
-(intermediate/python-data-management.ipynb)
-
-*Topics:* metadata, [CF compliance](http://drclimate.wordpress.com/2013/02/25/are-you-cf-compliant/)  
-
-
-### Regular Expressions
-
-(yet to be written)
+*Topics:* debugging (pdb), exception handling (try/except), advanced command line argument handling (argparse)
