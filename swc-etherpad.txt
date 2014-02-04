@@ -55,6 +55,8 @@ I can't import ipythonblocks...
   - easy_install ipythonblocks
 - Then you should relaunch ipython notepad
 
+I'm having trouble installing the software...
+ - You might find the solution here: https://github.com/swcarpentry/bc/wiki/Configuration-Problems-and-Solutions
 
 RESOURCES
 
