@@ -43,6 +43,10 @@ How can I connect to the internet?
 - UniMelb students: UniWireless
 - Monash students: eduroam (or get a UniMelb student to log you into UniWireless)
 
+- PC/Lab Accounts: utas008, UTAS2014; or utas009, UTAS2014
+- Network name: UConference
+- Password: 2013-conf273
+
 What was the website URL again?
 - http://damienirving.github.io/2013-11-25-unimelb/
 
