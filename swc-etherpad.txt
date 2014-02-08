@@ -73,6 +73,9 @@ RESOURCES
 
 LINKS:
 
+- Software Carpentry lesson material and ebook (beta versions)
+  - http://software-carpentry.org/v5/
+  - http://software-carpentry.org/v5/book.html
 - A Scientist's Nightmare: Software Problem Leads to Five Retractions: http://www.sciencemag.org/content/314/5807/1856
 - The how, what and why of testing your code: http://drclimate.wordpress.com/2013/10/10/testing-your-code/
 - An overview of version control: http://drclimate.wordpress.com/2012/11/16/version-control/
