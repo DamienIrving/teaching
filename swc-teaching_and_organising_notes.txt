@@ -39,5 +39,7 @@ TROUBLE SHOOTING
     $ export PATH=/usr/local/anaconda/bin:$PATH
   - Or just .../anaconda/bin/python
 
-
+- Screen resolution
+ - Apple -> system preferences -> displays
+ - My usual resolution is 1440 X 900
 
