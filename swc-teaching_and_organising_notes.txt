@@ -43,3 +43,7 @@ TROUBLE SHOOTING
  - Apple -> system preferences -> displays
  - My usual resolution is 1440 X 900
 
+- Wireless (setting up our own network)
+ - Login to the admin console on the router itself at 192.168.1.1 using admin:password!
+ - But first you need to go buy a tesltra usb dongle. Or its equivalent ZTE MF821 model dongle.
+
