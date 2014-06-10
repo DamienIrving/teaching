@@ -1,7 +1,11 @@
 import os, sys
-import cdms2
 import datetime
 from git import Repo
+
+import cdms2
+cdms2.setNetcdfShuffleFlag(0)
+cdms2.setNetcdfDeflateFlag(0)
+cdms2.setNetcdfDeflateLevelFlag(0)
 
 
 def main():
