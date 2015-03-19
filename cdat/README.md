@@ -1,6 +1,7 @@
 ## Summary - using CDAT in the weather/climate sciences
 
 To view ipython notebook lesson: http://nbviewer.ipython.org/gist/DamienIrving/7572585  
+General overview of CDAT: https://drclimate.wordpress.com/2014/01/02/a-beginners-guide-to-scripting-with-uv-cdat/  
 
 | Library/tool | Key points | 
 |:-------------|:-----|
