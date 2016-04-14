@@ -10,8 +10,9 @@ so Continuum Analystics have developed their own package manager called `conda` 
 
 ## Installation
 
-Miniconda: http://conda.pydata.org/miniconda.html  
-Windows users will also need a terminal emulator: https://git-for-windows.github.io/
+* Miniconda: http://conda.pydata.org/miniconda.html  
+* Windows users will also need a terminal emulator: https://git-for-windows.github.io/
+  * If you have any troube, see the [Software Carpentry install instructions](https://swcarpentry.github.io/workshop-template/) 
 
 ## Basic usage
 
@@ -83,7 +84,7 @@ $ source activate imas-pug
 ## Help
 
 * Main website: http://conda.pydata.org/docs/index.html (includes link to Google Group)  
-* GitHub issues for packages on anaconda.org  
+* GitHub issues for packages on anaconda.org ([example](https://github.com/ajdawson/windspharm/issues/66))  
 * Further reading: https://drclimate.wordpress.com/2016/04/13/keeping-up-with-continuum/
 
 
