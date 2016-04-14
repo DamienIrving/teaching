@@ -10,7 +10,7 @@ so Continuum Analystics have developed their own package manager called `conda` 
 
 ## Installation
 
-Miniconda: http://conda.pydata.org/miniconda.html
+Miniconda: http://conda.pydata.org/miniconda.html  
 Windows users will also need a terminal emulator: https://git-for-windows.github.io/
 
 ## Basic usage
@@ -18,14 +18,11 @@ Windows users will also need a terminal emulator: https://git-for-windows.github
 There are around 330 libraries available via `conda install`,
 which can be installed as follows:  
 ```
-$ conda search -f jupyter
 $ conda install jupyter
 ```
-
-For libraries not included in the 330,
-search [Anaconda Cloud](https://anaconda.org)
+You can use `conda search -f jupyter` to find out if the packge you want is in the 330.
+If not, search [Anaconda Cloud](https://anaconda.org)
 ```
-$ conda search -f iris
 $ conda install -c https://conda.anaconda.org/ioos iris
 ```
 
@@ -57,7 +54,7 @@ $ source activate imas-pug
 $ conda list
 ```
 
-(and it's `source deactivate` to exit)
+(it's `source deactivate` to exit)
 
 You can have lots of different environments:
 
@@ -69,10 +66,14 @@ and you can export them for others to use:
 
 ```
 $ conda env export -n imas-pug -f imas-pug
+$ cat imas-pug
+```
+
+```
 $ conda env upload -f imas-pug
 ```
 
-which can then be installed by them as follows:
+which can then be installed as follows:
 
 ```
 $ conda env create damienirving/imas-pug
@@ -81,7 +82,8 @@ $ source activate imas-pug
 
 ## Help
 
-http://conda.pydata.org/docs/index.html
-GitHub issues for packages on anaconda.org
+* Main website: http://conda.pydata.org/docs/index.html (includes link to Google Group)  
+* GitHub issues for packages on anaconda.org  
+* Further reading: https://drclimate.wordpress.com/2016/04/13/keeping-up-with-continuum/
 
 
