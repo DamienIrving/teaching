@@ -81,6 +81,8 @@ $ conda env create damienirving/imas-pug
 $ source activate imas-pug
 ```
 
+(To delete an environment `conda env remove -n imas-pug`)  
+
 ## Help
 
 * Main website: http://conda.pydata.org/docs/index.html (includes link to Google Group)  
