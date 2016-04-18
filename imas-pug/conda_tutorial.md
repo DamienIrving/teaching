@@ -10,22 +10,33 @@ so Continuum Analystics have developed their own package manager called `conda` 
 
 ## Installation
 
-* Miniconda: http://conda.pydata.org/miniconda.html  
+* Anaconda: https://www.continuum.io/downloads
 * Windows users will also need a terminal emulator: https://git-for-windows.github.io/
   * If you have any troube, see the [Software Carpentry install instructions](https://swcarpentry.github.io/workshop-template/) 
 
 ## Basic usage
 
-There are around 330 libraries available via `conda install`,
-which can be installed as follows:  
+Anaconda comes with around 75 of the most widely used libraries (and their depedencies).
+
+In addition, there are around 330 libraries available via `conda install`,
+which can be installed via the Navigator or at the command line as follows:  
 ```
-$ conda install jupyter
+$ conda install xarray
 ```
-You can use `conda search -f jupyter` to find out if the packge you want is in the 330.
-If not, search [Anaconda Cloud](https://anaconda.org)
+
+## Advanced usage
+
+This is all great, but up until now Anaconda gives us nothing that Canopy doesn't.
+The real advantage of Anaconda is anaconda.org -
+the community can contribute conda installation packages.
+
+So can use `conda search -f xarray` (or the Navigator) to find out if the packge you want is in the 330.
+If it's not, search [Anaconda Cloud](https://anaconda.org)
 ```
-$ conda install -c https://conda.anaconda.org/ioos iris
+$ conda install -c https://conda.anaconda.org/scitools iris
 ```
+
+([conda-forge](https://conda-forge.github.io/) has been launched to try and avoid this issue where there are lots of version of the same package)
 
 ## Environments
 
@@ -40,6 +51,7 @@ $ cat environment.yml
 name: imas-pug
 channels:
     - ioos
+    - scitools
 dependencies:
     - python=2.7
     - jupyter
@@ -82,6 +94,15 @@ $ source activate imas-pug
 ```
 
 (To delete an environment `conda env remove -n imas-pug`)  
+(To delete anaconda, just delete the folder)
+
+## Miniconda
+
+If you're working on a remote machine (e.g. at NCI),
+you might not have space for all of Anaconda.
+Instead, install [Miniconda](http://conda.pydata.org/miniconda.html).
+It essentially comes with conda and nothing else.
+
 
 ## Help
 
