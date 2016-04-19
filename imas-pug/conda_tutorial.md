@@ -1,12 +1,16 @@
-# Conda tutorial
+# Package management in Python
 
 ## Background
 
 See [this post](https://drclimate.wordpress.com/2014/10/30/software-installation-explained/)
 for a detailed discussion of software installation. 
 In summary, the Python package installer (`pip`) only works for libraries written in pure Python.
-Many scientific Python libraries have C and/or Fortran dependencies, 
-so Continuum Analystics have developed their own package manager called `conda` to deal with this issue.
+Many scientific Python libraries have C and/or Fortran dependencies,
+so the easy solution to this problem is to use a distribution like Anaconda or Canopy, 
+which come with all the most popular libraries pre-installed.
+These distributions also come with a package manager for installing libraries that weren't pre-installed.
+This tutorial focuses on `conda`, which is the package manager associated with Anaconda
+(as we'll see, it's better than the Canopy package manager).
 
 ## Installation
 
@@ -19,7 +23,7 @@ so Continuum Analystics have developed their own package manager called `conda` 
 Anaconda comes with around 75 of the most widely used libraries (and their depedencies).
 
 In addition, there are around 330 libraries available via `conda install`,
-which can be installed via the Navigator or at the command line as follows:  
+which can be installed via the Navigator or at the command line as per the following example:  
 ```
 $ conda install xarray
 ```
@@ -27,20 +31,20 @@ $ conda install xarray
 ## Advanced usage
 
 This is all great, but up until now Anaconda gives us nothing that Canopy doesn't.
-The real advantage of Anaconda is anaconda.org -
-the community can contribute conda installation packages.
+The real advantage of Anaconda is the [Anaconda Cloud](https://anaconda.org) website,
+where the community can contribute conda installation packages.
 
-So can use `conda search -f xarray` (or the Navigator) to find out if the packge you want is in the 330.
-If it's not, search [Anaconda Cloud](https://anaconda.org)
+You can use `conda search -f xarray` (or the Navigator) to find out if the packge you want is in the 330.
+If it's not, search Anaconda Cloud and find the command line entry needed to install the package. e.g:
 ```
 $ conda install -c https://conda.anaconda.org/scitools iris
 ```
 
-([conda-forge](https://conda-forge.github.io/) has been launched to try and avoid this issue where there are lots of version of the same package)
+([conda-forge](https://conda-forge.github.io/) has been launched to try and avoid the issue where there are multiple versions of the same package)
 
 ## Environments
 
-It could take a long time to install all the libraries you use one-by-one,
+It could take a long time to install all your libraries one-by-one,
 so instead we can create a conda environment.
 
 First, define a `.yml` file with a list of the libraries you want:
@@ -79,14 +83,18 @@ and you can export them for others to use:
 
 ```
 $ conda env export -n imas-pug -f imas-pug
-$ cat imas-pug
 ```
+
+(The resulting file (`imas-pug`) has a bug in that the required channels aren't listed.
+You can either add them manually or use this work-around.)
+
+You can then upload the environment to your account at Anaconda Cloud:
 
 ```
 $ conda env upload -f imas-pug
 ```
 
-which can then be installed as follows:
+so that others can re-create your environment as follows:
 
 ```
 $ conda env create damienirving/imas-pug
@@ -106,8 +114,7 @@ It essentially comes with conda and nothing else.
 
 ## Help
 
-* Main website: http://conda.pydata.org/docs/index.html (includes link to Google Group)  
-* GitHub issues for packages on anaconda.org ([example](https://github.com/ajdawson/windspharm/issues/66))  
+* Main website: http://conda.pydata.org/docs/index.html (includes link to Google Group for help questions)  
 * Further reading: https://drclimate.wordpress.com/2016/04/13/keeping-up-with-continuum/
 
 
