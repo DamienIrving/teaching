@@ -85,7 +85,7 @@ and you can export them for others to use:
 $ conda env export -n imas-pug -f imas-pug
 ```
 
-(The resulting file (`imas-pug`) has a bug in that the required channels aren't listed.
+(The resulting file `imas-pug` has a bug in that the required channels aren't listed.
 You can either add them manually or use [this work-around](https://github.com/conda/conda/issues/2350#issuecomment-211725309).)
 
 You can then upload the environment to your account at Anaconda Cloud:
