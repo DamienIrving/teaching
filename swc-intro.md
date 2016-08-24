@@ -24,7 +24,7 @@ PhD comics captures this angst perfectly:
 * [The Magic Code](http://phdcomics.com/comics.php?f=1687)
 
 
-## What gets taught at a bootcamp?
+## What gets taught at a workshop?
 
 Our goal is to teach a handful of [best practices in scientific computing](http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001745), so that 
 researchers can get more done in less time. 
@@ -46,7 +46,7 @@ underpinning effective scientific computing, you can teach yourself the tools th
 usually true).
 
 
-## Who teaches at a bootcamp?
+## Who teaches at a workshop?
 
 Most [qualified](http://www.software-carpentry.org/team) Software Carpentry instructors are
 research scientists and not professional software developers. 
@@ -64,7 +64,7 @@ During the live coding participants usually sit back and watch,
 and then during the challenges they have an opportunty to try things out and ask questions 
 (i.e. it is not expected that participants will follow along with the live coding on their own machine). 
 There's no need to take notes, as copies of all the teaching materials are available on the Software
-Carpentry website (see [here](http://www.software-carpentry.org/lessons).
+Carpentry website (see [here](http://www.software-carpentry.org/lessons)).
 
 If you're having trouble at any point, put up a red post-it note and a helper will come to your aid. 
 If things are going well, put a green one up. 
