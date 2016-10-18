@@ -27,10 +27,10 @@ which can be installed via the Navigator or at the command line as per the follo
 ```
 $ conda install xarray
 ```
-### Side note: Miniconda
+### (Side note: Miniconda)
 
-It should be noted that if you don't want to install the entire Anaconda distribution,
-which is quite large, you can install [Miniconda](http://conda.pydata.org/miniconda.html) instead.
+If you don't want to install the entire Anaconda distribution,
+you can install [Miniconda](http://conda.pydata.org/miniconda.html) instead.
 It essentially comes with conda and nothing else.
 
 
@@ -111,7 +111,7 @@ $ source activate imas-pug
 (To delete anaconda, just delete the folder)
 
 
-### Side note: conda kapsel
+### (Side note: conda kapsel)
 
 To make the management of environments even easier, [conda kapsel](https://www.continuum.io/blog/developer-blog/automate-your-readme-conda-kapsel-beta-1) has been released.
 
