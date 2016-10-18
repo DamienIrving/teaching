@@ -113,7 +113,7 @@ $ source activate imas-pug
 
 ### (Side note: conda kapsel)
 
-To make the management of environments even easier, [conda kapsel](https://www.continuum.io/blog/developer-blog/automate-your-readme-conda-kapsel-beta-1) has been released.
+To make the management and sharing of environments even easier, [conda kapsel](https://www.continuum.io/blog/developer-blog/automate-your-readme-conda-kapsel-beta-1) has been released.
 
 
 ## Help
