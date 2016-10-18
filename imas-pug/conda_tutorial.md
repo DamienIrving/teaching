@@ -27,6 +27,12 @@ which can be installed via the Navigator or at the command line as per the follo
 ```
 $ conda install xarray
 ```
+### Side note: Miniconda
+
+It should be noted that if you don't want to install the entire Anaconda distribution,
+which is quite large, you can install [Miniconda](http://conda.pydata.org/miniconda.html) instead.
+It essentially comes with conda and nothing else.
+
 
 ## Advanced usage
 
@@ -42,7 +48,7 @@ $ conda install -c https://conda.anaconda.org/scitools iris
 
 ([conda-forge](https://conda-forge.github.io/) has been launched to try and avoid the issue where there are multiple versions of the same package)
 
-## Environments
+### Environments
 
 It could take a long time to install all your libraries one-by-one,
 so instead we can create a conda environment.
@@ -104,12 +110,10 @@ $ source activate imas-pug
 (To delete an environment `conda env remove -n imas-pug`)  
 (To delete anaconda, just delete the folder)
 
-## Miniconda
 
-If you're working on a remote machine (e.g. at NCI),
-you might not have space for all of Anaconda.
-Instead, install [Miniconda](http://conda.pydata.org/miniconda.html).
-It essentially comes with conda and nothing else.
+### Side note: conda kapsel
+
+To make the management of environments even easier, [conda kapsel](https://www.continuum.io/blog/developer-blog/automate-your-readme-conda-kapsel-beta-1) has been released.
 
 
 ## Help
