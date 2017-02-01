@@ -58,11 +58,10 @@ $ conda config --add channels conda-forge
 It could take a long time to install all your libraries one-by-one,
 so instead we can create a conda environment.
 
-First, define a `.yml` file with a list of the libraries you want:
+First, define a `environment.yml` file with a list of the libraries you want.
+The file should have the following format:
 
 ```
-$ cat environment.yml
-
 name: imas-pug
 channels:
     - conda-forge
