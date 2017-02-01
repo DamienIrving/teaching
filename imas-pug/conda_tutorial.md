@@ -41,12 +41,17 @@ The real advantage of Anaconda is the [Anaconda Cloud](https://anaconda.org) web
 where the community can contribute conda installation packages.
 
 You can use `conda search -f xarray` (or the Navigator) to find out if the packge you want is in the 330.
-If it's not, search Anaconda Cloud and find the command line entry needed to install the package. e.g:
+If it's not, search Anaconda Cloud to find the command line entry needed to install the package. e.g:
 ```
 $ conda install -c https://conda.anaconda.org/scitools iris
 ```
 
-([conda-forge](https://conda-forge.github.io/) has been launched to try and avoid the issue where there are multiple versions of the same package)
+In many cases, there are many versions of the same package up on Anaconda Cloud.
+[conda-forge](https://conda-forge.github.io/) has been launched to have a central place for just a single version.
+You can therefore expand the selection of packages available via `conda install` beyond the chosen 330 by adding conda-forge:
+```
+$ conda config --add channels conda-forge
+```
 
 ### Environments
 
@@ -60,10 +65,8 @@ $ cat environment.yml
 
 name: imas-pug
 channels:
-    - ioos
-    - scitools
+    - conda-forge
 dependencies:
-    - python=2.7
     - jupyter
     - iris
     - gsw
