@@ -74,7 +74,7 @@ dependencies:
 Then generate that environment:
 
 ```
-$ conda env create environment.yml
+$ conda env create -f environment.yml
 $ source activate imas-pug
 $ conda list
 ```
