@@ -23,10 +23,14 @@ This tutorial focuses on `conda`, which is the package manager associated with A
 Anaconda comes with around 75 of the most widely used libraries (and their depedencies).
 
 In addition, there are around 330 libraries available via `conda install`,
-which can be installed via the Navigator or at the command line as per the following example:  
+which can be installed via the Anaconda Navigator graphical user interface or at the command line.
+For instance, installing the popular `xarray` library can be achieved
+by simply entering the following at the command line:  
 ```
 $ conda install xarray
 ```
+You can use `conda search -f xarray` (or the Navigator) to find out if the packge you want is in the 330.
+
 ### (Side note: Miniconda)
 
 If you don't want to install the entire Anaconda distribution,
@@ -40,8 +44,7 @@ This is all great, but up until now Anaconda gives us nothing that Canopy doesn'
 The real advantage of Anaconda is the [Anaconda Cloud](https://anaconda.org) website,
 where the community can contribute conda installation packages.
 
-You can use `conda search -f xarray` (or the Navigator) to find out if the packge you want is in the 330.
-If it's not, search Anaconda Cloud to find the command line entry needed to install the package. e.g:
+Search Anaconda Cloud to find the command line entry needed to install the package. e.g:
 ```
 $ conda install -c https://conda.anaconda.org/scitools iris
 ```
@@ -62,7 +65,7 @@ First, define a `environment.yml` file with a list of the libraries you want.
 The file should have the following format:
 
 ```
-name: amos-icshmo
+name: pyaos-lesson
 channels:
     - conda-forge
 dependencies:
@@ -76,7 +79,7 @@ Then generate that environment:
 
 ```
 $ conda env create -f environment.yml
-$ source activate amos-icshmo
+$ source activate pyaos-lesson
 $ conda list
 ```
 
@@ -91,26 +94,26 @@ $ conda info --envs
 and you can export them for others to use:
 
 ```
-$ conda env export -n imas-pug -f imas-pug
+$ conda env export -n pyaos-lesson -f pyaos-lesson
 ```
 
-(The resulting file `imas-pug` has a bug in that the required channels aren't listed.
+(The resulting file `pyaos-lesson` has a bug in that the required channels aren't listed.
 You can either add them manually or use [this work-around](https://github.com/conda/conda/issues/2350#issuecomment-211725309).)
 
 You can then upload the environment to your account at Anaconda Cloud:
 
 ```
-$ conda env upload -f imas-pug
+$ conda env upload -f pyaos-lesson
 ```
 
 so that others can re-create your environment as follows:
 
 ```
-$ conda env create damienirving/imas-pug
-$ source activate imas-pug
+$ conda env create damienirving/pyaos-lesson
+$ source activate pyaos-lesson
 ```
 
-(To delete an environment `conda env remove -n imas-pug`)  
+(To delete an environment `conda env remove -n pyaos-lesson`)  
 (To delete anaconda, just delete the folder)
 
 
