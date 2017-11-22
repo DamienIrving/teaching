@@ -4,12 +4,12 @@
 
 See [this post](https://drclimate.wordpress.com/2014/10/30/software-installation-explained/)
 for a detailed discussion of software installation. 
-In summary, the Python package installer (`pip`) only works for libraries written in pure Python.
+In summary, the Python package installer ([pip](https://pip.pypa.io)) only works for libraries written in pure Python.
 Many scientific Python libraries have C and/or Fortran dependencies,
 so the easy solution to this problem is to use a distribution like Anaconda or Canopy, 
 which come with all the most popular libraries pre-installed.
 These distributions also come with a package manager for installing libraries that weren't pre-installed.
-This tutorial focuses on `conda`, which is the package manager associated with Anaconda
+This tutorial focuses on [conda](https://conda.io/docs/), which is the package manager associated with Anaconda
 (as we'll see, it's better than the Canopy package manager).
 
 ## Installation
@@ -120,6 +120,5 @@ To make the management and sharing of environments even easier, [conda kapsel](h
 
 
 ## Help
-
-* Main website: http://conda.pydata.org/docs/index.html (includes link to Google Group for help questions)  
+  
 * Further reading: https://drclimate.wordpress.com/2016/04/13/keeping-up-with-continuum/
