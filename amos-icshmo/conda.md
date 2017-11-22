@@ -58,28 +58,27 @@ $ conda config --add channels conda-forge
 
 ### Environments
 
-It could take a long time to install all your libraries one-by-one,
-so instead we can create a conda environment.
+Now we can go ahead and use conda to install the libraries we need for this lesson.
+Rather than install everything in the same place
+(which can get unweidly if you've got mutliple data science projects on the go)
+it's common practice to create separate environments
+for the various projects you're working on. 
 
-First, define a `environment.yml` file with a list of the libraries you want.
-The file should have the following format:
-
-```
-name: pyaos-lesson
-channels:
-    - conda-forge
-dependencies:
-    - jupyter
-    - iris
-    - cmocean
-    - gitpython
-```
-
-Then generate that environment:
+Let's call this environment `pyaos-lesson`
+and include the jupyter library (so we can use the jupyter notebook),
+iris (for handling our CMIP5 data),
+cmocean (for nice color palettes) and 
+gitpython (for integrating version control information):
 
 ```
-$ conda env create -f environment.yml
+$ conda create -n pyaos-lesson jupyter iris cmocean gitpython
 $ source activate pyaos-lesson
+```
+If we list all the libraries in this new envrionment,
+we can see that jupyter, iris, cmocean, gitpython
+and all the required dependencies have been installed:
+
+```
 $ conda list
 ```
 
@@ -91,14 +90,11 @@ You can have lots of different environments:
 $ conda info --envs
 ```
 
-and you can export them for others to use:
+and you can export them (to a YAML configuration file) for others to use:
 
 ```
 $ conda env export -n pyaos-lesson -f pyaos-lesson
 ```
-
-(The resulting file `pyaos-lesson` has a bug in that the required channels aren't listed.
-You can either add them manually or use [this work-around](https://github.com/conda/conda/issues/2350#issuecomment-211725309).)
 
 You can then upload the environment to your account at Anaconda Cloud:
 
