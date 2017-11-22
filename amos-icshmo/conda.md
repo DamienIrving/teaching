@@ -65,10 +65,11 @@ it's common practice to create separate environments
 for the various projects you're working on. 
 
 Let's call this environment `pyaos-lesson`
-and include the jupyter library (so we can use the jupyter notebook),
-iris (for handling our CMIP5 data),
-cmocean (for nice color palettes) and 
-gitpython (for integrating version control information):
+and include the [jupyter](https://jupyter.org/) library (so we can use the jupyter notebook),
+[iris](http://scitools.org.uk/iris/) (for handling our CMIP5 data),
+[cmocean](http://matplotlib.org/cmocean/) (for nice color palettes) and 
+[gitpython](http://gitpython.readthedocs.io)
+(for integrating version control information into data provenance):
 
 ```
 $ conda create -n pyaos-lesson jupyter iris cmocean gitpython
@@ -76,7 +77,7 @@ $ source activate pyaos-lesson
 ```
 If we list all the libraries in this new envrionment,
 we can see that jupyter, iris, cmocean, gitpython
-and all the required dependencies have been installed:
+and all their required dependencies have been installed:
 
 ```
 $ conda list
