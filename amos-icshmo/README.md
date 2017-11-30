@@ -16,7 +16,7 @@ Brief walk through Python at the command line, ipython at the command line, popu
 
 #### 3. Visualising CMIP data
 
-See [conda.md](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/visualising_cmip_data.ipynb)
+See [visualising_cmip_data.ipynb](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/visualising_cmip_data.ipynb)
 
 #### 4. Functions / modular code
 
