@@ -8,7 +8,7 @@ i.e. What libraries are we going to use for the task? [This post](https://drclim
 
 #### 1. Install libraries using conda
 
-iris, gitpython, jupyter, cmocean
+See [conda.md](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/conda.md)
 
 #### 2. Interacting with Python
 
