@@ -14,15 +14,19 @@ See [conda.md](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/
 
 Brief walk through Python at the command line, ipython at the command line, popular IDE's (e.g. Spyder) and finally the Jupyter notebook.
 
-#### 3. Functions / modular code
+#### 3. Visualising CMIP data
 
-#### 4. Vectorisation
+See [conda.md](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/visualising_cmip_data.ipynb)
 
-#### 5. Testing and defensive programming
+#### 4. Functions / modular code
 
-#### 6. Command line programs
+#### 5. Vectorisation
 
-#### 7. Version control with git
+#### 6. Testing and defensive programming
 
-#### 8. Data provenace
+#### 7. Command line programs
+
+#### 8. Version control with git
+
+#### 9. Data provenace
 
