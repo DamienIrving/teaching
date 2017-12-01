@@ -24,6 +24,8 @@ See [functions.ipynb](https://github.com/DamienIrving/teaching/blob/master/amos-
 
 #### 5. Vectorisation
 
+See [vectorisation.ipynb](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/vectorisation.ipynb)
+
 #### 6. Testing and defensive programming
 
 #### 7. Command line programs
