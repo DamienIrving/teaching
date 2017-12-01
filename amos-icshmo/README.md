@@ -20,6 +20,8 @@ See [visualising_cmip_data.ipynb](https://github.com/DamienIrving/teaching/blob/
 
 #### 4. Functions / modular code
 
+See [functions.ipynb](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/functions.ipynb)
+
 #### 5. Vectorisation
 
 #### 6. Testing and defensive programming
