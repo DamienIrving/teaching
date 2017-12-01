@@ -28,19 +28,20 @@ See [vectorisation.ipynb](https://github.com/DamienIrving/teaching/blob/master/a
 
 #### 6. Command line programs
 
-See [command_line_programs.md](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/command_line_programs.md)
+See [command_line_programs.md](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/command_line_programs.md).  
 Give scaffold script, they need to fill it with functions developed earlier. (Use pdb)
 
 #### 7. Version control with git
 
-Create repo
+Create repo.  
 Track changes as we edit code so it puts two plots on one figure 
 
 #### 8. Testing and defensive programming
 
-Add assertions (with SWC assertions example first if there is time).
+Add assertions to script
+(with [SWC assertions example](http://swcarpentry.github.io/python-novice-inflammation/08-defensive/) first if there's time).
 
 #### 9. Data provenace
 
-Create timestamp functions.
+Create timestamp functions.  
 Put them in a separate module and import them.
