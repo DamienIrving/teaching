@@ -37,7 +37,8 @@ Track a minor cosmetic changes to the code (e.g. improved docstring).
 #### 7. Vectorisation
 
 Introduce how to create and apply the mask.  
-Challenge: Get them to add that functionality into the script. Commit/push to git/GitHub once it's working. 
+Challenge: Get them to add that functionality into the script.  
+Commit/push to git/GitHub once it's working.  
 See [vectorisation.ipynb](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/vectorisation.ipynb)
 
 #### 8. Testing and defensive programming
