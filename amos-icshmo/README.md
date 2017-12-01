@@ -26,11 +26,21 @@ See [functions.ipynb](https://github.com/DamienIrving/teaching/blob/master/amos-
 
 See [vectorisation.ipynb](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/vectorisation.ipynb)
 
-#### 6. Testing and defensive programming
+#### 6. Command line programs
 
-#### 7. Command line programs
+See [command_line_programs.md](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/command_line_programs.md)
+Give scaffold script, they need to fill it with functions developed earlier. (Use pdb)
 
-#### 8. Version control with git
+#### 7. Version control with git
+
+Create repo
+Track changes as we edit code so it puts two plots on one figure 
+
+#### 8. Testing and defensive programming
+
+Add assertions (with SWC assertions example first if there is time).
 
 #### 9. Data provenace
 
+Create timestamp functions.
+Put them in a separate module and import them.
