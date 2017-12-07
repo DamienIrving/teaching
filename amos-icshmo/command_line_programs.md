@@ -208,8 +208,8 @@ $ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i
 **Challenge:** Take the `plot_precipitation_climatology.py` script
 and make the following improvements
 (you may need to browse the 
-[argparse](https://docs.python.org/3/howto/argparse.html)
-tutorial for ideas).
+[argparse tutorial](https://docs.python.org/3/howto/argparse.html)
+for ideas).
 After each step,
 run the script to check that the new feature is working,
 using `pdb` to debug as necessary. 
