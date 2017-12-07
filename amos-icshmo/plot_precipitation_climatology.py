@@ -29,6 +29,20 @@ def convert_pr_units(cube):
     return cube
 
 
+def apply_mask(pr_cube, sftlf_cube, realm):
+    """Mask ocean using a sftlf (land surface fraction) file."""
+    
+    if realm == 'land':
+        mask = numpy.where(sftlf_cube.data > 50, True, False)
+    else:
+        mask = numpy.where(sftlf_cube.data < 50, True, False)
+    
+    pr_cube.data = numpy.ma.asarray(pr_cube.data)
+    pr_cube.data.mask = mask
+    
+    return pr_cube
+
+
 def plot_data(cube, month, gridlines=False, levels=None):
     """Plot the data."""
 
@@ -56,6 +70,12 @@ def main(inargs):
     cube = read_data(inargs.infile, inargs.month)    
     cube = convert_pr_units(cube)
     clim = cube.collapsed('time', iris.analysis.MEAN)
+
+    if inargs.mask:
+        sftlf_file, realm = inargs.mask
+        sftlf_cube = iris.load_cube(sftlf_file, 'land_area_fraction')
+        clim = apply_mask(clim, sftlf_cube, realm)
+
     plot_data(clim, inargs.month, gridlines=inargs.gridlines,
               levels=inargs.cbar_levels)
     plt.savefig(inargs.outfile)
@@ -77,6 +97,9 @@ if __name__ == '__main__':
                         help="Include gridlines on the plot")
     parser.add_argument("--cbar_levels", type=float, nargs='*', default=None,
                         help='list of levels / tick marks to appear on the colourbar')
+
+    parser.add_argument("--mask", type=str, nargs=2, metavar=('SFTLF_FILE', 'REALM'), default=None,
+                        help='Apply a land or ocean mask (specify the realm to mask)')
 
     args = parser.parse_args()            
     main(args)
