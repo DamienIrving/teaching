@@ -134,15 +134,17 @@ def convert_pr_units(cube):
     
     return cube
 
-def plot_data(cube, month, cmap=cmocean.cm.haline_r):
+def plot_data(cube, month, gridlines=False):
     """Plot the data."""
         
     fig = plt.figure(figsize=[12,5])    
-    iplt.contourf(cube, cmap=cmap, 
+    iplt.contourf(cube, cmap=cmocean.cm.haline_r, 
                   levels=numpy.arange(0, 10),
                   extend='max')
 
     plt.gca().coastlines()
+    if gridlines:
+        plt.gca().gridlines()
     cbar = plt.colorbar()
     cbar.set_label(str(cube.units))
     
@@ -182,8 +184,9 @@ tutorial for ideas)
 1. The `parser.add_argument()` function has an optional `choices` keyword argument.
 Use it to define the valid input months (i.e. `['Jan', 'Feb', ...]`).
 
-2. Add an optional argparse argument for the color palette and set the default to `cmocean.cm.haline_r`
+2. Add a true/false optional argparse argument to allow the user to add gridlines to the plot 
 
-3. Add a true/false optional argparse argument to allow the user to add gridlines to the plot (hint: the code for plotting gridlines is `plt.gca().gridlines()`)  
+3. Add an optional argparse argument that allows the user to specify the tick levels used in the colourbar 
 
-4. Add an optional argparse argument that allows the user to specify the tick levels used in the colorbar 
+4. Add any other options you'd like for customising the plot (e.g. title, axis labels, figure size) 
+
