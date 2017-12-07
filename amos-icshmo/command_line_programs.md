@@ -180,7 +180,7 @@ and make the following improvements
 tutorial for ideas)
 
 1. The `parser.add_argument()` function has an optional `choices` keyword argument.
-Use it to define the valid input months (i.e. ['Jan', 'Feb', ...]).
+Use it to define the valid input months (i.e. `['Jan', 'Feb', ...]`).
 
 2. Add an optional argparse argument for the color palette and set the default to `cmocean.cm.haline_r`
 
