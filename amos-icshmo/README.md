@@ -23,22 +23,16 @@ See [visualising_cmip_data.ipynb](https://github.com/DamienIrving/teaching/blob/
 See [functions.ipynb](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/functions.ipynb)
 
 #### 5. Command line programs
-
-Starting from a template script, put the code in and get it running.  
-Challenge: add some minor custom options (tick levels, palette, gridlines, advanced: projection).  
-(Introduce pdb along the way.)  
+  
 See [command_line_programs.md](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/command_line_programs.md).  
 
 #### 6. Version control with git
 
 Create repo.  
-Track a minor cosmetic changes to the code (e.g. improved docstring).  
+Track a minor cosmetic change to the code (e.g. improved docstring).  
 
 #### 7. Vectorisation
 
-Introduce how to create and apply the mask.  
-Challenge: Get them to add that functionality into the script.  
-Commit/push to git/GitHub once it's working.  
 See [vectorisation.ipynb](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/vectorisation.ipynb)
 
 #### 8. Testing and defensive programming

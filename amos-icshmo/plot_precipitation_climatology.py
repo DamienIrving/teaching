@@ -7,6 +7,7 @@ import iris.coord_categorisation
 import cmocean
 import numpy
 import calendar
+import pdb
 
 
 def read_data(fname, month):
@@ -67,7 +68,8 @@ def plot_data(cube, month, gridlines=False, levels=None):
 def main(inargs):
     """Run the program."""
 
-    cube = read_data(inargs.infile, inargs.month)    
+    cube = read_data(inargs.infile, inargs.month)  
+    #pdb.set_trace()  
     cube = convert_pr_units(cube)
     clim = cube.collapsed('time', iris.analysis.MEAN)
 

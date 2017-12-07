@@ -171,15 +171,48 @@ if __name__ == '__main__':
     args = parser.parse_args()
 ```
 
+... and then run it at the command line: 
 ```
-$ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512.nc May pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512-clim.png
+$ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512.nc May pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512-may-clim.png
 ```
+
+> ### Debugging
+>
+> If you want know what your code is doing while it's running,
+> insert a tracer using the Python debugger:
+> ```
+> import pdb
+> 
+> ...
+> cube = read_data(inargs.infile, inargs.month)    
+> pdb.set_trace()
+> cube = convert_pr_units(cube)
+> ...
+> ```
+> When you run the script,
+> it will stop at the tracer and allow you to interrogate the code:
+>```
+> $ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512.nc May pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512-may-clim.png 
+> /Users/damienirving/Documents/Volunteer/teaching/amos-icshmo/plot_precipitation_climatology.py(73)main()
+> -> cube = convert_pr_units(cube)
+> (Pdb) print(inargs.month)
+> May
+>```
+> You can then enter `n` to go to the next command,
+> `s` to step into the next function,
+> `c` to run the rest of the script or
+> `q` to quit.
+
+
 
 **Challenge:** Take the `plot_precipitation_climatology.py` script
 and make the following improvements
 (you may need to browse the 
 [argparse](https://docs.python.org/3/howto/argparse.html)
-tutorial for ideas)
+tutorial for ideas).
+After each step,
+run the script to check that the new feature is working,
+using `pdb` to debug as necessary. 
 
 1. The `parser.add_argument()` function has an optional `choices` keyword argument.
 Use it to define the valid input months (i.e. `['Jan', 'Feb', ...]`).
