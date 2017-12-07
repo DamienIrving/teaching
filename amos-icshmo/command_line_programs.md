@@ -20,7 +20,6 @@ In general, the first thing that gets added to any Python script is the followin
 ```
 if __name__ == '__main__':
     main()
-
 ```
 
 The reason we need these two lines of code
@@ -31,7 +30,7 @@ whereas when running a script we expect to see some output
 
 The `__name__` variable exists to handle these two situations.
 When you import a Python file `__name__` is set to the name of that file
-(e.g. when importing script.py, `__name__` is 'script'),
+(e.g. when importing script.py, `__name__` is `script`),
 but when running a script in bash `__name__` is always set to `__main__`.
 The convention is to call the function that produces the output `main()`,
 but you can call it whatever you like.
@@ -66,17 +65,15 @@ if __name__ == '__main__':
 
     args = parser.parse_args()            
     main(args)
-
 ```
 
-By running script_template.py at the command line
+By running `script_template.py` at the command line
 we'll see that argparse handles all the input arguments:
 
 ```
 $ python script_template.py in.nc out.nc
 Input file:  in.nc
 Output file:  out.nc
-
 ```
 
 It also generates help information for the user:
@@ -93,7 +90,6 @@ positional arguments:
 
 optional arguments:
   -h, --help  show this help message and exit
-
 ```
 
 and issues errors when users give the program invalid arguments:
@@ -102,7 +98,6 @@ and issues errors when users give the program invalid arguments:
 $ python script_template.py in.nc
 usage: script_template.py [-h] infile outfile
 script_template.py: error: the following arguments are required: outfile
-
 ``` 
 
 Using this template as a starting point,
@@ -172,24 +167,22 @@ if __name__ == '__main__':
     parser.add_argument("outfile", type=str, help="Output file name")
 
     args = parser.parse_args()
-
 ```
 
 ```
 $ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512.nc May pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512-clim.png
-
 ```
 
-**Challenge:** Take the plot_precipitation_climatology.py script
+**Challenge:** Take the `plot_precipitation_climatology.py` script
 and make the following improvements
 (you may need to browse the 
 [argparse](https://docs.python.org/3/howto/argparse.html)
 tutorial for ideas)
 
-1. The add_argument function has an optional 'choices' keyword argument.
+1. The `parser.add_argument()` function has an optional `choices` keyword argument.
 Use it to define the valid input months (i.e. ['Jan', 'Feb', ...]).
 
-2. Add an optional argparse argument for the color palette and set the default to cmocean.cm.haline_r
+2. Add an optional argparse argument for the color palette and set the default to `cmocean.cm.haline_r`
 
 3. Add a true/false optional argparse argument to allow the user to add gridlines to the plot (hint: the code for plotting gridlines is `plt.gca().gridlines()`)  
 
