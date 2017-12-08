@@ -205,14 +205,25 @@ $ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i
 
 
 
-**Challenge:** Take the `plot_precipitation_climatology.py` script
-and make the following improvements
-(you may need to browse the 
-[argparse tutorial](https://docs.python.org/3/howto/argparse.html)
-for ideas).
-After each step,
-run the script to check that the new feature is working,
-using `pdb` to debug as necessary. 
+**Challenge:** 
+
+Take the `plot_precipitation_climatology.py` script
+and save it in a new directory on your desktop called `home-computer/data-carpentry`.
+For example (the location of your `Desktop` directory may differ slightly):
+
+```
+$ cd ~/Desktop
+$ mkdir -p home-computer/data-carpentry
+$ cd home-computer/data-carpentry
+$ ls
+plot_precipitation_climatology.py
+```
+
+The reason for this choice of directory name will become clear in the version control lesson.
+
+Using the [argparse tutorial](https://docs.python.org/3/howto/argparse.html) as a guide
+and `pdb` to debug where necessary,
+now make the following improvements to `plot_precipitation_climatology.py`: 
 
 1. The `parser.add_argument()` function has an optional `choices` keyword argument.
 Use it to define the valid input months (i.e. `['Jan', 'Feb', ...]`).
@@ -222,4 +233,3 @@ Use it to define the valid input months (i.e. `['Jan', 'Feb', ...]`).
 3. Add an optional argparse argument that allows the user to specify the tick levels used in the colourbar 
 
 4. Add any other options you'd like for customising the plot (e.g. title, axis labels, figure size) 
-
