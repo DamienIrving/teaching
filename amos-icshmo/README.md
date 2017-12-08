@@ -37,11 +37,10 @@ See [vectorisation.ipynb](https://github.com/DamienIrving/teaching/blob/master/a
 
 #### 8. Testing and defensive programming
 
-Add assertions to script. Commit/push to git/GitHub once you're done.   
-(do [SWC assertions example](http://swcarpentry.github.io/python-novice-inflammation/08-defensive/) first if there's time).
+Do the [SWC assertions example](http://swcarpentry.github.io/python-novice-inflammation/08-defensive/)  
+Challenge: Add assertions to `plot_precipitation_climatology.py`. Commit/push to git/GitHub once you're done.   
+(SWC content on test driven development is further reading.)
 
 #### 9. Data provenace
 
-Create timestamp functions.  
-Put them in a separate module and import them.  
-Add those module files to git/GitHub.  
+See [data_provenance.ipynb](https://github.com/DamienIrving/teaching/blob/master/amos-icshmo/data_provenance.ipynb)

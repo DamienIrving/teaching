@@ -8,6 +8,7 @@ import cmocean
 import numpy
 import calendar
 import pdb
+import provenance
 
 
 def read_data(fname, month):
@@ -65,6 +66,18 @@ def plot_data(cube, month, gridlines=False, levels=None):
     plt.title(title)
 
 
+def write_metadata(outfile, previous_history):
+    """Write the history record to file."""
+    
+    new_history = provenance.get_history_record()
+    complete_history = '%s \n %s' %(new_history, previous_history)
+    
+    fname, extension = outfile.split('.')
+    metadata_file = open(fname+'.txt', 'w')
+    metadata_file.write(complete_history) 
+    metadata_file.close()
+
+
 def main(inargs):
     """Run the program."""
 
@@ -81,6 +94,7 @@ def main(inargs):
     plot_data(clim, inargs.month, gridlines=inargs.gridlines,
               levels=inargs.cbar_levels)
     plt.savefig(inargs.outfile)
+    write_metadata(inargs.outfile, cube.attributes['history'])
 
 
 if __name__ == '__main__':
