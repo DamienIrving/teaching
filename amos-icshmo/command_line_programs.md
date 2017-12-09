@@ -208,18 +208,16 @@ $ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i
 **Challenge:** 
 
 Take the `plot_precipitation_climatology.py` script
-and save it in a new directory on your desktop called `home-computer/data-carpentry`.
+and save it in a new directory on your desktop called `data-carpentry`.
 For example (the location of your `Desktop` directory may differ slightly):
 
 ```
 $ cd ~/Desktop
-$ mkdir -p home-computer/data-carpentry
-$ cd home-computer/data-carpentry
+$ mkdir data-carpentry
+$ cd data-carpentry
 $ ls
 plot_precipitation_climatology.py
 ```
-
-The reason for this choice of directory name will become clear in the version control lesson.
 
 Using the [argparse tutorial](https://docs.python.org/3/howto/argparse.html) as a guide
 and `pdb` to debug where necessary,
