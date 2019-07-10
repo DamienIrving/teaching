@@ -4,8 +4,8 @@ Intro: Show a map of the global average temperature and rainfall.
 
 Why do these maps look the way they do?
 - Why is most of the planet at a habitable temperature?
-- Why are all the major deserts of the world (Sahara, Gobi, Mojave, Kalahari, Great Victoria)
-  located at a similar latitude north or south? 
+- Why are all the major deserts of the world located at a similar latitude north or south? 
+- Why does our weather in Hobart tend to come from the west?
 - Why is it four seasons in one day/week in Melbourne
   but basically the same weather every singe day in Darwin?
 - Why is it freezing cold in Newfoundland and Labrador but relatively mild in the UK?
@@ -100,22 +100,58 @@ water vapor (36–70%), carbon dioxide (9–26%), methane (4–9%) and ozone (3�
 - Hadley Cell, mid latitude eddies, geostrophic balance, jet streams
 - https://earth.nullschool.net
 
-Much more heat is absorbed at low than at high latitudes.
-This is because the Earth's surface gradually tilts away from the sun (the sun is lower on the horizon)
-as you move away from the equator.
-That tilting spreads the solar energy supply over progressively larger areas of ground or ocean surface,
-so that each square meter gets less and less heat as you head poleward.
-At low latitudes the Earth's surface actually absorbs more energy that its upper atmosphere emits to space
-(an energy surplus) while at high latitudes the reverse is true (an energy deficit).
-This is because the latitudinal temperature gradient in the upper troposphere is less than the
-temperature gradient at the surface.
+An important detail we haven't addressed so far is that the surface heating by the sun is uneven.
+Much more heat is absorbed at low than at high latitudes, 
+because Earth's surface gradually tilts away from the sun.
+In other words, the average angle of incidence of solar radiation across the year
+gradually decreases from the tropics towards the poles.
 
-Of course, absorbing more energy than is lost at low latitudes, and the reverse closer to the poles, is not sustainable.
-There has to be a balancing so that temperatures stabilize across the planet,
+> **[Seasons](https://allgeographynow.wordpress.com/2016/02/22/the-earths-revolution-around-the-sun/)**
+>
+> Earth's axis is tilted at 23.5°.
+>
+> At the equinox (March 21 and September 23) the sun is directly overhead at the equator.
+>
+> At the winter solstice (June 21) the sun is directly overhead at Tropic of Capricorn (23.5° South)
+> and it's dark all day within the Arctic Circle (66.5° North). 
+>
+> At the summer solstice (December 22) the sun is directly overhead at the Tropic of Cancer (23.5° North)
+> and it's dark all day within the Antarctic Circle (66.5° South)
+
+This means that at low latitudes Earth's surface actually absorbs more energy
+than the upper atmosphere emits to space (an energy surplus)
+while at high latitudes the reverse is true (an energy deficit). 
+
+Of course, absorbing more energy than is lost at low latitudes,
+and the reverse closer to the poles, is not sustainable.
+There has to be a balancing so that temperatures stabilise across the planet,
 and this requires a transfer of heat from the equatorial region to higher latitudes.
 The transfer is done by large scale motions in the atmosphere and oceans.
-Motion (winds and currents) happen because solar heating, and heat loss to space, create pressure gradients.
-Wind and water move from high to low pressure conditions.
+These motion (i.e. winds and currents) happen because the solar heating
+and heat loss to space, create pressure gradients. 
+Air and water move from high to low pressure conditions.
+
+With respect to the atmospheric heat transport,
+the strong heating of the bottom of the atmosphere in the tropics
+makes the air less dense, so it becomes buoyant and rises (think hot air balloon).
+This rising, lower density air in the tropics forms the largest vertical motion in the atmosphere.
+From the tropics the rising air spreads poleward at altitude and loses heat to space by radiation.
+The cooling causes density to increase and the air sinks.
+
+On a planet that isn't rotating,
+these large circulation cells would extend all the way to the poles.
+However, because of the Earth’s rotation, such an atmospheric structure would be unstable.
+Consequently, the two cells driven by the ascendance at the Equator, called the Hadley cells,
+close with a downward branch at a latitude of about 30°.
+
+The downward limb of the Hadley Cell creates a region of higher pressure
+at the Earth's surface that balances the area of low pressure along the equator.
+Along the surface the pressure gradient will make the winds blow from mid to low latitude.
+A pressure gradient also develops poleward of 30° so that winds are driven to higher latitudes as well.
+So, from the mid-latitude surface high pressure center, winds head north and south.
+
+> **Why are all the major deserts of the world located at a similar latitude north or south?**
+>
 
 
 ## Ocean circulation
