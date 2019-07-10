@@ -139,19 +139,56 @@ From the tropics the rising air spreads poleward at altitude and loses heat to s
 The cooling causes density to increase and the air sinks.
 
 On a planet that isn't rotating,
-these large circulation cells would extend all the way to the poles.
+a single circulation cell would extend all the way to the poles in either hemisphere.
 However, because of the Earth’s rotation, such an atmospheric structure would be unstable.
-Consequently, the two cells driven by the ascendance at the Equator, called the Hadley cells,
-close with a downward branch at a latitude of about 30°.
-
-The downward limb of the Hadley Cell creates a region of higher pressure
-at the Earth's surface that balances the area of low pressure along the equator.
-Along the surface the pressure gradient will make the winds blow from mid to low latitude.
-A pressure gradient also develops poleward of 30° so that winds are driven to higher latitudes as well.
-So, from the mid-latitude surface high pressure center, winds head north and south.
+There are in fact three cells in either hemisphere named Hadley, Ferrel and Polar.
 
 > **Why are all the major deserts of the world located at a similar latitude north or south?**
 >
+> The ascending branch of the Hadley cell in the tropics is associated with
+> low atmospheric surface pressure and high rainfall.
+> As the air rises it cools and the water vapour in it condenses, forming clouds and ultimately rain.
+> Having lost most of its water vapour to condensation and rainfall in the upward branch
+> of the Hadley cell circulation, the descending air is dry and creates a region of higher pressure.
+> The subtropical regions are therefore relatively free of the thunderstorms
+> that are common in the tropics. 
+> Many of the world's deserts are located in these subtropical latitudes.
+
+
+### Coriolis force
+
+One might expect the surface winds associated with the Hadley cells to flow
+from the two high pressure regions in the subtropics (i.e. there's one in each hemisphere)
+in a north/south direction towards the equator.
+
+In reality, the flow of the winds is modified by the fact
+that this motion is happening over a rotating surface.
+The Earth spins to the east and the speed of that rotation at the surface
+is fastest at the equator and drops to zero at the poles.
+That's because the speed depends on the distance which has to be covered in each daily rotation
+(about 24,000 miles at the equator and zero at the poles;
+so the rotational speed varies from about 1000 to 0 mph).
+
+So, winds blowing to lower latitude get left behind
+as they rotate eastward at a lower speed than the surface they are traveling over
+(remember that rotation speed increases towards the equator).
+This, called the Coriolis Effect, causes winds blowing to the equator to turn towards the west.
+The result is a steady wind stream between 10 and 15° of latitude.
+These are the tradewinds (also called the Easterlies, as in coming from the East).
+
+Poleward of the high pressure center near 30° latitude,
+the inverse of the trades is generated because air flowing poleward
+moves over a surface which is rotating at slower and slower speeds.
+In this case, the winds veer to the east as their eastward motion outstrips
+that of the surface they are flowing over.
+In this way a steady flow from west to east (the Westerlies) associated with the Ferrel cell
+is created at about 45° latitude.  
+
+
+
+
+
+
 
 
 ## Ocean circulation
