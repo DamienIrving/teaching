@@ -6,8 +6,7 @@ Why do these maps look the way they do?
 - Why is most of the planet at a habitable temperature?
 - Why are all the major deserts of the world located at a similar latitude north or south? 
 - Why does our weather in Hobart tend to come from the west?
-- Why is it four seasons in one day/week in Melbourne
-  but basically the same weather every singe day in Darwin?
+- Why is Melbourne famous for experiencing four seasons in one day?
 - Why is it freezing cold in Newfoundland and Labrador but relatively mild in the UK?
 
 To answer those questions, we need to know how the climate system works...
@@ -96,10 +95,6 @@ water vapor (36–70%), carbon dioxide (9–26%), methane (4–9%) and ozone (3�
 
 ## General circulation
 
-- Radiation budget + Coriolis force
-- Hadley Cell, mid latitude eddies, geostrophic balance, jet streams
-- https://earth.nullschool.net
-
 An important detail we haven't addressed so far is that the surface heating by the sun is uneven.
 Much more heat is absorbed at low than at high latitudes, 
 because Earth's surface gradually tilts away from the sun.
@@ -184,11 +179,19 @@ that of the surface they are flowing over.
 In this way a steady flow from west to east (the Westerlies) associated with the Ferrel cell
 is created at about 45° latitude.  
 
+> **Why does our weather in Hobart tend to come from the west?**
+>
+> Due to the mid-latitude westerlies that arise due to the Ferrel cell and Coriolis force.
 
+### Eddies
 
+In the tropics,
+the Hadley cell is the major mechanism by which the energy from the sun is transported polewards.
+In the mid-latitude it's [eddies](https://earth.nullschool.net) associated with the jet stream... 
 
-
-
+> **Why is Melbourne famous for experiencing four seasons in one day?**
+>
+>
 
 
 ## Ocean circulation
