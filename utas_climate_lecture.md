@@ -196,9 +196,79 @@ In the mid-latitude it's [eddies](https://earth.nullschool.net) associated with 
 
 ## Ocean circulation
 
-- Surface currents driven by winds (gyres etc)
-- Then a thermocline 
-- Deep water formation at the poles is what drives the deeper currents
+### Surface currents  
+  
+The surface ocean currents arise due to a combination of the surface winds (i.e. the tradewinds and westerlies),
+Earth's rotation (the Coriolis force) and Earth's landmasses.  
+  
+The surface winds blow over the oceans and the water responds to the friction and moves.
+Of course, as the water begins to move, the Coriolis Effect comes into play
+and the currents veer westwards if going to lower latitudes and easterwards if going poleward.
+As a result, the surface ocean currents are driven in circles called
+[gyres](https://www.nationalgeographic.org/encyclopedia/ocean-gyre/).
+There are tropical, subtropical and polar gyres, 
+the largest of which are the subtropical gyres that fill the middle of all oceans
+and rotate such that poleward flow is on the western side of the basin.
+Heat transfer from low to high latitudes is via the western boundary currents of the oceans
+(like the Gulf Stream in the North Atlantic).
+
+> **Why is it freezing cold in Newfoundland and Labrador but relatively mild in the UK?**
+>
+> The Gulf Stream carries warm equatorial water up the eastern coast of the United States and on to western Europe,
+> bypassing much of the eastern coastline of Canada.
+
+These surface currents operate in a relatively thin upper layer of the sea which is heated by the sun.
+This heating is kept relatively close to the ocean surface
+because warming water makes it less dense and more resistant to sinking or mixing downwards.
+The result is a barrier, called the thermocline, which develops particularly at lower and mid-latitudes
+(it is more seasonal poleward) and that separates surface waters from the deep ocean.
+The boundary, marked by a rapid downward temperature drop, usually occurs within a few hundred meters of less of the surface.
+Below it, the greater mass of the oceans (down to an average depth of about 3800m) is cold and isolated from the winds.
+
+## Deep ocean currents
+
+Despite its isolation from the surface, the deep sea is in motion.
+Flow in the deep sea is initiated where the normal, density layered, oceanic water column breaks down
+and surface water sinks due to processes which raise its density.
+The primary cause of water column destabilization is sea-ice formation.
+Making ice, which is fresh, leaves behind a brine which is quite salty.
+This cold, highly saline (hence dense) water heads for the deep sea.
+It supplies the great deep ocean water masses,
+the North Atlantic Deep Water and Antarctic Bottom Water.
+
+Naturally what goes down must come up if deep currents are going to continue to flow.
+Deep waters born in the Atlantic (for instance) spread to the other ocean basins using
+the circum-planetary highway that surrounds Antarctica.
+This seaway serves as the roundabout connecting all the world's oceans and allowing
+deep Atlantic water to spread ultimately to the Pacific.
+On average, the trip takes about 800 years.
+Along the way water finds return routes to the surface.
+Since the deep waters are more dense than those at the surface,
+energy has to be used to pump them up.
+Ultimately, the energy is provided by the planetary heat gradients as these drive wind and deep ocean flow.
+
+The winds provide upward draw on deep waters thanks to the Coriolis Effect.
+Along the eastern sides of ocean basins and around Antarctica winds
+(the south easterly trades associated with the Hadley and Polar cells respectively)
+blow such that Coriolis veering drives them oceanward, away from the land margin.
+The surface waters are drawn away from the coast.
+The result is a process called upwelling, which causes deeper water to rise
+and replace the water pulled away from the shore.
+Upwelling is particularly effective around Antarctica because the water column there is uniformly cold,
+which means that the thermocline barrier to vertical motion is weak and waters can be drawn up from depth.
+As a result, upwelling in the Southern Ocean provides one of the main avenues by which deep waters eventually surface.
+
+> **Why don't deserts extend to the eastern side of the various continents?** 
+> 
+> Because the subtropical gyres transport warm surface waters
+> to the western side of each ocean basin,
+> while upwelling makes the surface waters even colder on the eastern side. 
+> Warm surface waters are associated with more evaporation and ultimately rainfall.
+
+Together, the surface currents and deep ocean currents form the
+[Global Conveyor Belt](https://www.e-education.psu.edu/earth103/node/686),
+which performs that fundamental task required of the ocean:
+the transport of heat from the tropics towards the poles.
 
 
 ## Different temporal and spacial scales
