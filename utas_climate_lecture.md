@@ -5,11 +5,10 @@ Intro: Show a map of the global average temperature and rainfall.
 Why do these maps look the way they do?
 - Why is most of the planet at a habitable temperature?
 - Why are all the major deserts of the world located at a similar latitude north or south? 
-- Why does our weather in Hobart tend to come from the west?
-- Why is Melbourne famous for experiencing four seasons in one day?
 - Why is it freezing cold in Newfoundland and Labrador but relatively mild in the UK?
+- Why is it so much wetter on the west coast of Tasmania than the east?
 
-To answer those questions, we need to know how the climate system works...
+To answer those questions and many more, we need to know how the climate system works...
 
 ## Planetary energy balance
 
@@ -18,8 +17,8 @@ The climate system is powered by radiation from the sun.
 This energy warms the planet, but the warming also causes Earth to start radiating energy back into space.
 Ultimately, the temperature of the planet will be that at which energy absorbed balances energy lost.
 
-The energy coming from the sun is principally in the shorter wavelengths (0.3–1µm)
-while the energy emitted by Earth surfaces is in the longer wavelength infrared (4–100µm).
+The energy coming from the sun is principally in the shorter wavelengths,
+while the energy emitted by Earth surfaces is in the longer wavelengths.
 (The wavelengths are dictated by the temperature of the emitter:
 Earth is cooler than the sun so it radiates at a longer wavelength).
 
@@ -149,7 +148,6 @@ There are in fact three cells in either hemisphere named Hadley, Ferrel and Pola
 > that are common in the tropics. 
 > Many of the world's deserts are located in these subtropical latitudes.
 
-
 ### Coriolis force
 
 One might expect the surface winds associated with the Hadley cells to flow
@@ -183,22 +181,74 @@ is created at about 45° latitude.
 >
 > Due to the mid-latitude westerlies that arise due to the Ferrel cell and Coriolis force.
 
-### Eddies
+### Mid-latitiude eddies
 
 In the tropics,
 the Hadley cell is the major mechanism by which the energy from the sun is transported polewards.
-In the mid-latitude it's [eddies](https://earth.nullschool.net) associated with the jet stream... 
+The Ferrel cell does some of the poleward heat transport in the mid-latitudes,
+but the major mechanism is [eddies](https://earth.nullschool.net) embedded in the westerlies.
+(Similar to stirring a cup of coffee,
+the atmospheric stirring induced by the eddies evens out the temperature gradient between north and south.)
+In other words, the high and low pressure systems we see on
+[weather maps](http://www.bom.gov.au/australia/charts/) are collectively
+doing the bulk of the poleward energy transport in the mid latitudes.
+As air moves from the high pressure systems towards low pressure systems,
+it is deflected by the coriolis force,
+thus the wind circulates anti-clockwise around a high and clockwise around a low
+(in the Southern Hemisphere).
 
 > **Why is Melbourne famous for experiencing four seasons in one day?**
 >
+> Melbourne has a reputation (especially among people who live further north on the mainland)
+> for having highly variable weather.
+> This is because of its location in the mid-latitudes,
+> where high and low pressure systems are spinning around all over the place
+> (generally following a path from west to east).
+> In summer, a low pressure system could move over Melbourne,
+> with northerly winds bringing warm air from over central Australia
+> as the system approaches from the west,
+> and southerly winds bringing cold air from over the Southern Ocean
+> as it departs to the east.
+
+### Smaller-scale details
+
+Mid-latitude eddies are a good example of how smaller scale processes
+can also have a large and important impact on the climate system.
+Highs and lows in the mid-latitudes are "synoptic scale" features
+(hundreds of kilometers across, last on the order of weeks)
+and obviously much smaller than the Hadley cell,
+but are collectively just as important for energy transport.
+
+Smaller scale features are also very important in determining the local climate.
+The influence of topography is obvious on global rainfall maps.
+The trade winds are forced to rise over topography,
+which causes the air to cool, condense and ultimately rain out.
+By the time the air arrives on the downslope side of the topography,
+it's realtively warm and dry.
+This is known as the [foehn effect](http://www.atmo.arizona.edu/students/courselinks/fall12/atmo170a1s1/coming_up/week_9/lect27_regional_winds.html).
+
+> **Why is Strahan much wetter than Swansea?**
 >
+> Due to the presence of the central highlands.
+> Moist air in the westerlies is forced to rise and cool
+> as it hits the west coast of Tasmania,
+> which causes condensation and rain.
+> By the time that air gets to the east coast, it's much drier.
+
+At an even smaller scale,
+the afternoon sea breezes during summer in Sydney
+(the land gets so hot it causes localised low pressure that
+draws in air from over the relatively cool ocean)
+means that the average maximum temperature in coastal suburbs 
+like Bondi are substantially lower than for the inland western suburbs.
 
 
 ## Ocean circulation
 
 ### Surface currents  
   
-The surface ocean currents arise due to a combination of the surface winds (i.e. the tradewinds and westerlies),
+Turning out attention to the ocean,
+the surface ocean currents arise due to a combination of the surface winds (i.e. the tradewinds and westerlies),
 Earth's rotation (the Coriolis force) and Earth's landmasses.  
   
 The surface winds blow over the oceans and the water responds to the friction and moves.
@@ -225,7 +275,7 @@ The result is a barrier, called the thermocline, which develops particularly at 
 The boundary, marked by a rapid downward temperature drop, usually occurs within a few hundred meters of less of the surface.
 Below it, the greater mass of the oceans (down to an average depth of about 3800m) is cold and isolated from the winds.
 
-## Deep ocean currents
+### Deep ocean currents
 
 Despite its isolation from the surface, the deep sea is in motion.
 Flow in the deep sea is initiated where the normal, density layered, oceanic water column breaks down
@@ -271,27 +321,35 @@ which performs that fundamental task required of the ocean:
 the transport of heat from the tropics towards the poles.
 
 
-## Different temporal and spacial scales
+### Climate variability
 
-The general circulation and thermohaline circulation do a good job at describing the large scale climate,
-but smaller scale factors are important for local differences:
-- Topography: Strahan much wetter than Swansea
-- Land/ocean distribution: Much colder winters in New Hampshire than here, much cooler in the eastern suburbs of Sydney due to sea breeze
+The ocean plays a big role in climate variability... ENSO, IOD.
 
-
-## Climate variability
-
-Geological timescales: Milankovic cycles, movement of continents, etc  
 Decadal: IPO  
 Annual: ENSO, SAM, IOD (Show BoM seasonal outlook video, drought)  
+
+Geological timescales: Milankovic cycles, movement of continents, etc 
 
 
 ## Summary
 
-Our weather and climate is driven ultimately by the energy the Earth receives from the Sun.
-The conditions we experience around the world are governed by the way this energy
-is redistributed by the atmosphere and oceans.
+Our weather and climate is driven ultimately by the unequal distribution
+of energy that the Earth receives from the Sun.
+The poleward transport of energy from the tropics,
+combined with the rotation of the earth
+(and also the configuration of the continents and ocean basins),
+dictates the major features of the climate system:
+trade winds, ocean gyres, upwelling,
+regions of large-scale convection (rain) and subsidence (desert), etc.
+These features modify, and are themselves modified by,
+processes happening at smaller time and space scales
+(e.g. mid-latitude eddies, sea-breezes),
+creating the myriad of different local climates
+that people experience around the world.
 
-The behaviour of the atmosphere and oceans is governed by fundamental laws of physics.
-The behaviour is very complex because many different processes and scales - from microscopic to global - are involved.
-This complexity is the reason that understanding, simulating and predicting the climate system is such a big challenge.
+It's hard enough understanding the interactions between
+things happening at different time and space scales in a stable climate,
+let alone one that's changing due to greenhouse gas emissions.
+The rest of this course will look at how scientists go about doing just that.
+
+
