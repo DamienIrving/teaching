@@ -210,7 +210,7 @@ thus the wind circulates anti-clockwise around a high and clockwise around a low
 > and southerly winds bringing cold air from over the Southern Ocean
 > as it departs to the east.
 
-### Smaller-scale details
+### Different time and space scales
 
 Mid-latitude eddies are a good example of how smaller scale processes
 can also have a large and important impact on the climate system.
@@ -235,8 +235,9 @@ This is known as the [foehn effect](http://www.atmo.arizona.edu/students/coursel
 > which causes condensation and rain.
 > By the time that air gets to the east coast, it's much drier.
 
-At an even smaller scale,
-the afternoon sea breezes during summer in Sydney
+At an even smaller scale, the afternoon
+[sea breezes](https://www.swellnet.com/news/swellnet-analysis/2017/10/06/understanding-sea-breeze-part-1)
+during summer in Sydney
 (the land gets so hot it causes localised low pressure that
 draws in air from over the relatively cool ocean)
 means that the average maximum temperature in coastal suburbs 
