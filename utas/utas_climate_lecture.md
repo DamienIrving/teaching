@@ -94,6 +94,8 @@ water vapor (36–70%), carbon dioxide (9–26%), methane (4–9%) and ozone (3�
 
 ## General circulation
 
+### Differential heating
+
 An important detail we haven't addressed so far is that the surface heating by the sun is uneven.
 Much more heat is absorbed at low than at high latitudes, 
 because Earth's surface gradually tilts away from the sun.
