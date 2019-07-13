@@ -12,6 +12,8 @@ To answer those questions and many more, we need to know how the climate system 
 
 ## Planetary energy balance
 
+*See NASA's [best estimate](https://science-edu.larc.nasa.gov/energy_budget/) of the planetary energy budget.*
+
 The climate system is powered by radiation from the sun.
 
 This energy warms the planet, but the warming also causes Earth to start radiating energy back into space.
