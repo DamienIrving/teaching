@@ -415,7 +415,7 @@ This cold, highly saline (hence dense) water heads for the deep sea.
 It supplies the great deep ocean water masses,
 the North Atlantic Deep Water and Antarctic Bottom Water.
 
-### Coastal upwelling
+#### Coastal upwelling
 
 *See the [CliMates blog post on upwelling](https://studentclimates.wordpress.com/2017/08/17/upwelling-zones-secrets-of-the-deep-ocean/) for a good overview.*
 
