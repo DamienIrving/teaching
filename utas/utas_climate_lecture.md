@@ -192,7 +192,9 @@ Thus it requires centuries for Earth's surface temperature to respond fully to a
 
 ## 4. General circulation
 
-### Differential heating
+### Differential heating and the Hadley, Ferrel and Polar cells
+
+*See [Loubere (2012), Figure 4 and associated text](https://www.nature.com/scitable/knowledge/library/the-global-climate-system-74649049) for a description of the circulation cells.*
 
 An important detail we haven't addressed so far is that the surface heating by the sun is uneven.
 Much more heat is absorbed at low than at high latitudes, 
@@ -200,7 +202,9 @@ because Earth's surface gradually tilts away from the sun.
 In other words, the average angle of incidence of solar radiation across the year
 gradually decreases from the tropics towards the poles.
 
-> **[Seasons](https://allgeographynow.wordpress.com/2016/02/22/the-earths-revolution-around-the-sun/)**
+> **Seasons**
+>
+> *Check out [these images](https://allgeographynow.wordpress.com/2016/02/22/the-earths-revolution-around-the-sun/) of Earth's orbit for the various seasons.*
 >
 > Earth's axis is tilted at 23.5°.
 >
@@ -237,6 +241,17 @@ a single circulation cell would extend all the way to the poles in either hemisp
 However, because of the Earth’s rotation, such an atmospheric structure would be unstable.
 There are in fact three cells in either hemisphere named Hadley, Ferrel and Polar.
 
+> **Precipitation vs evaporation**
+>
+> Earlier we looked at the global water cycle and noted that most of the evaporation and precipitation happens over the ocean.
+> The atmospheric circulation cells cause a distinct pattern of precipitation and evaporation dominated regions to occur,
+> as described by [The Global Water Cycle](https://www2.whoi.edu/site/globalwatercycle/) page 
+> at the Woods Hole Oceanographic Institution website.
+>
+> This pattern is amplifying with global warming.
+> You'll hear people talking about a general pattern across the globe of wet regions getting wetter,
+> and dry regions getting drier.
+
 > **Why are all the major deserts of the world located at a similar latitude north or south?**
 >
 > The ascending branch of the Hadley cell in the tropics is associated with
@@ -248,7 +263,9 @@ There are in fact three cells in either hemisphere named Hadley, Ferrel and Pola
 > that are common in the tropics. 
 > Many of the world's deserts are located in these subtropical latitudes.
 
-### Coriolis force
+### Coriolis effect
+
+*A nice illustration of the Coriolis effect can be found [here](https://photobucket.com/gallery/user/henryflowers33/media/bWVkaWFJZDozMTc5NDIxMw==/?ref=).*
 
 One might expect the surface winds associated with the Hadley cells to flow
 from the two high pressure regions in the subtropics (i.e. there's one in each hemisphere)
@@ -259,8 +276,8 @@ that this motion is happening over a rotating surface.
 The Earth spins to the east and the speed of that rotation at the surface
 is fastest at the equator and drops to zero at the poles.
 That's because the speed depends on the distance which has to be covered in each daily rotation
-(about 24,000 miles at the equator and zero at the poles;
-so the rotational speed varies from about 1000 to 0 mph).
+(about 40,000 kms at the equator and zero at the poles;
+so the rotational speed varies from about 1,690 to 0 km/hr)..
 
 So, winds blowing to lower latitude get left behind
 as they rotate eastward at a lower speed than the surface they are traveling over
@@ -363,10 +380,19 @@ and rotate such that poleward flow is on the western side of the basin.
 Heat transfer from low to high latitudes is via the western boundary currents of the oceans
 (like the Gulf Stream in the North Atlantic).
 
+Just as with the scales of motion for the atmosphere,
+there’s actually lots of small scale features embedded in the gyres,
+as demonstrated by this [NASA perpetual ocean visualisation](https://www.youtube.com/watch?v=CCmTY0PKGDs).
+
+
 > **Why is it freezing cold in Newfoundland and Labrador but relatively mild in the UK?**
 >
 > The Gulf Stream carries warm equatorial water up the eastern coast of the United States and on to western Europe,
 > bypassing much of the eastern coastline of Canada.
+
+### Thermocline
+
+*For more information, check out the [NOAA ocean facts page on the thermocline](https://oceanservice.noaa.gov/facts/thermocline.html).*
 
 These surface currents operate in a relatively thin upper layer of the sea which is heated by the sun.
 This heating is kept relatively close to the ocean surface
@@ -378,6 +404,8 @@ Below it, the greater mass of the oceans (down to an average depth of about 3800
 
 ### Deep ocean currents
 
+*See Professor Matthew England's [recent projects page (Figure 2)](http://web.science.unsw.edu.au/~matthew/southern_ocean_variability.htm) for an illustration of deep water formation.*  
+
 Despite its isolation from the surface, the deep sea is in motion.
 Flow in the deep sea is initiated where the normal, density layered, oceanic water column breaks down
 and surface water sinks due to processes which raise its density.
@@ -387,52 +415,47 @@ This cold, highly saline (hence dense) water heads for the deep sea.
 It supplies the great deep ocean water masses,
 the North Atlantic Deep Water and Antarctic Bottom Water.
 
-Naturally what goes down must come up if deep currents are going to continue to flow.
-Deep waters born in the Atlantic (for instance) spread to the other ocean basins using
-the circum-planetary highway that surrounds Antarctica.
-This seaway serves as the roundabout connecting all the world's oceans and allowing
-deep Atlantic water to spread ultimately to the Pacific.
-On average, the trip takes about 800 years.
-Along the way water finds return routes to the surface.
-Since the deep waters are more dense than those at the surface,
-energy has to be used to pump them up.
-Ultimately, the energy is provided by the planetary heat gradients as these drive wind and deep ocean flow.
+### Coastal upwelling
 
-The winds provide upward draw on deep waters thanks to the Coriolis Effect.
-Along the eastern sides of ocean basins and around Antarctica winds
-(the south easterly trades associated with the Hadley and Polar cells respectively)
-blow such that Coriolis veering drives them oceanward, away from the land margin.
-The surface waters are drawn away from the coast.
-The result is a process called upwelling, which causes deeper water to rise
-and replace the water pulled away from the shore.
-Upwelling is particularly effective around Antarctica because the water column there is uniformly cold,
-which means that the thermocline barrier to vertical motion is weak and waters can be drawn up from depth.
-As a result, upwelling in the Southern Ocean provides one of the main avenues by which deep waters eventually surface.
+*See the [CliMates blog post on upwelling](https://studentclimates.wordpress.com/2017/08/17/upwelling-zones-secrets-of-the-deep-ocean/) for a good overview.*
 
-> **Why don't deserts extend to the eastern side of the various continents?** 
-> 
-> Because the subtropical gyres transport warm surface waters
-> to the western side of each ocean basin,
-> while upwelling makes the surface waters even colder on the eastern side. 
-> Warm surface waters are associated with more evaporation and ultimately rainfall.
+Naturally what goes down must come up if the deep currents are going to continue to flow. The process of these re-emerging deep water masses is called upwelling.
+
+Upwelling doesn’t just happen anywhere but rather in certain regions of wind-sea interaction. Along the west coasts of continents in the southern hemisphere southerly winds (coming from the south east) are responsible for this phenomenon while in the northern hemisphere northerly winds cause upwelling. (Also, critically, the westerlies over the Sothern Ocean cause upwelling – see Matthew England's figure from the previous section.)
+
+The force of the wind pushes the surface layer of the ocean to the north (in the southern hemisphere, and vice versa) however, due to the rotation of the earth the moving water masses are deflected to the left in the southern hemisphere and to the right in the northern hemisphere, so away from the west coasts. The missing surface waters are replaced by water masses from the depth by upwelling of former mentioned.
+
+Usually, these rising waters are colder, nutrient and oxygen rich waters, leading to increasing numbers of phytoplankton when reaching the surface. Phytoplankton on the other hand forms the base of the food chain making upwelling regions the most productive fisheries of the world. About half the world’s total fish catch comes from upwelling zones.
+
+### Global conveyor belt
 
 Together, the surface currents and deep ocean currents form the
 [Global Conveyor Belt](https://www.e-education.psu.edu/earth103/node/686),
 which performs that fundamental task required of the ocean:
 the transport of heat from the tropics towards the poles.
 
-
 ### Climate variability
 
-The ocean plays a big role in climate variability... ENSO, IOD.
+Because it evolves more slowly than the atmosphere (and evaporation from the ocean surface is a massive source of moisture),
+the ocean plays a big role in climate variability (i.e. in droughts, wetter/drier than average seasons/years, etc).
 
-Decadal: IPO  
-Annual: ENSO, SAM, IOD (Show BoM seasonal outlook video, drought)  
+You'll notice in the latest [seasonal outlook](https://www.youtube.com/watch?v=XaWR-I4jvzE)
+from the Bureau of Meteorology that they focus a lot on sea surface temperatures in the
+tropical Indian Ocean (driven by the [Indian Ocean Dipole](http://www.bom.gov.au/climate/iod/))
+and tropical Pacific Ocean (driven by the [El Nino Southern Oscillation](https://www.youtube.com/watch?v=dzat16LMtQk)).
 
-Geological timescales: Milankovic cycles, movement of continents, etc 
+
+## 7. Geologic perspective
+
+To finish, it's useful to put the current climate (and climate change) in perspective
+by considering how Earth’s climate has varied of it’s 4.6 billion year history.
+
+Climate communication is a bit of a focus for this subject and we’ve just seen how the Bureau of Meteorology do it, 
+so check out the [History of Earth's Climate](https://www.youtube.com/watch?v=dC_2WXyORGA) from SciShow,
+which is one of the most popular science channels on YouTube.
 
 
-## 7. Summary
+## 8. Summary
 
 Our weather and climate is driven ultimately by the unequal distribution
 of energy that the Earth receives from the Sun.
