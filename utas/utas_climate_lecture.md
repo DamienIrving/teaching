@@ -1,6 +1,8 @@
 # The climate system and how it works
 
-Intro: Show a map of the global average temperature and rainfall.
+The most simple depiction of the current climate is the
+[annual mean temperature and rainfall](https://github.com/DamienIrving/teaching/blob/master/utas/utas_climate_lecture.ipynb)
+across the globe.
 
 Why do these maps look the way they do?
 - Why is most of the planet at a habitable temperature?
@@ -10,9 +12,9 @@ Why do these maps look the way they do?
 
 To answer those questions and many more, we need to know how the climate system works...
 
-## Planetary energy balance
+## 1. Planetary energy balance
 
-*See NASA's [best estimate](https://science-edu.larc.nasa.gov/energy_budget/) of the planetary energy budget.*
+*See [NASA's estimate](https://science-edu.larc.nasa.gov/energy_budget/) of the planetary energy budget and a good summary from [Loubere (2012)](https://www.nature.com/scitable/knowledge/library/the-global-climate-system-74649049)*.
 
 The climate system is powered by radiation from the sun.
 
@@ -40,7 +42,8 @@ For simplicity this can be taken as the upper part of the troposphere.
 
 > **Troposphere**
 >
-> The atmosphere has a number of levels 
+> There are a number of named
+> [levels of the atmosphere](https://robertcarrollweather.files.wordpress.com/2014/11/agburt01_09.jpg), 
 > the lowest of which is called the troposphere.
 > It contains more than 80% of the mass of the atmosphere,
 > it's where most vertical motion and weather changes take place,
@@ -64,14 +67,14 @@ Some factor is causing our climate to be nearly 35°C warmer than we can explain
 radiation from the sun alone...
 
 
-## Greenhouse effect
+## 2. Greenhouse effect
 
 To explain the higher than expected temperature in the lower troposhere, 
 we need to understand its chemical composition.
 
 Dry air is mainly composed of: nitrogen (78%), oxygen (21%),
-argon (1%) and to a lesser extent carbon dioxide ([415 ppm](https://www.co2.earth/) or 0.0415%).
-The remaining fraction is made up of various trace constituents such as methane (1.75 ppm).
+argon (1%) and to a lesser extent carbon dioxide (410 ppm or 0.041%).
+The remaining fraction is made up of various trace constituents such as methane (1.8 ppm).
 
 In addition, a highly variable amount of water vapour is present in the air.
 This ranges from approximately 0% in the coldest part of the atmosphere to as much as 5% in moist and hot regions.
@@ -93,8 +96,101 @@ water vapor (36–70%), carbon dioxide (9–26%), methane (4–9%) and ozone (3�
 >
 > Because of the Greenhouse effect.
 
+### Global water cycle
 
-## General circulation
+*See [Bengtssen (2010)](https://iopscience.iop.org/article/10.1088/1748-9326/5/2/025202/meta) for a good summary figure of the global water cycle.*
+
+*Much of the text here is taken from the
+[USGS Fundamentals of the Water Cycle](https://www.usgs.gov/special-topic/water-science-school/science/fundamentals-water-cycle?qt-science_center_objects=0#qt-science_center_objects) page.*
+
+So if water vapor and and carbon dioxide are the most influential Greenhouse gases,
+we should stop for a second and consider the global water and carbon cycles. 
+
+The water cycle technically has no starting point, but we'll begin in the oceans,
+since that is where most of Earth's water exists.
+The sun, which drives the water cycle, heats water in the oceans.
+Some of it evaporates as vapor into the air.
+Rising air currents take the vapor up into the atmosphere, along with water from evapotranspiration,
+which is water transpired from plants and evaporated from the soil.
+The vapor rises into the air where cooler temperatures cause it to condense into clouds.
+
+Air currents move clouds around the globe, cloud particles collide, grow, and fall out of the sky as precipitation.
+Some precipitation falls as snow and can accumulate as ice caps and glaciers
+which can store frozen water for thousands of years. 
+Snowpacks in warmer climates often thaw and melt when spring arrives,
+and the melted water flows overland as snowmelt.
+Most precipitation falls back into the oceans or onto land, where, due to gravity,
+the precipitation flows over the ground as surface runoff.
+A portion of runoff enters rivers in valleys in the landscape, with streamflow moving water towards the oceans.
+Runoff, and groundwater seepage, accumulate and are stored as freshwater in lakes.
+Not all runoff flows into rivers, though. 
+Much of it soaks into the ground as infiltration.
+Some water infiltrates deep into the ground and replenishes aquifers (saturated subsurface rock),
+which store huge amounts of freshwater for long periods of time.
+
+For every 1°C of warming, the atmosphere can hold 7% more water vapour (Clausius-Clapeyron equation).
+This is one of many global warming positive feedbacks.
+
+### Global carbon cycle
+
+*The Science Learning Hub Pokapū Akoranga Pūtaiao has a good interactive [image](https://www.sciencelearn.org.nz/image_maps/3-carbon-cycle) depicting the carbon cycle.*
+
+The global carbon cycle is usually thought to have four major carbon sinks/stores (in grey) 
+interconnected by pathways/processes of exchange (blue). These stores are:  
+
+* the atmosphere (carbon dioxide),
+* the terrestrial biosphere (vegetation and non-living organic material, such as soil carbon),
+* the oceans (which includes dissolved inorganic carbon and living and non-living marine biota),
+* and the sediments (fossil fuels, sediments and rocks)
+
+If we focus on the atmosphere, here are the pathways for carbon leaving:
+
+* *Photosynthesis:* When the sun is shining, plants perform photosynthesis to convert carbon dioxide into carbohydrates, releasing oxygen in the process. Deforestation and land clearing reduce this mechanism of carbon dioxide removal from the atmosphere.
+* *Ocean productivity:* In upper ocean areas of high productivity, organisms form tissue containing carbon, and some also form carbonate shells or other hard body parts. Phytoplankton (microscopic plants that live in the ocean) soak up carbon via photosynthesis. In warmer seas, organisms cannot produce carbonate shells at the same rate, and increasingly acidic seas dissolve shells, or make it difficult to create shelly material.
+
+Some pathways exchange with the atmosphere in both directions:
+
+* *Ocean surface exchange:* At the surface of the oceans towards the poles, seawater becomes cooler and CO2 is more soluble. Cold ocean temperatures favor the uptake of carbon dioxide from the atmosphere whereas warm temperatures can cause the ocean surface to release carbon dioxide. With seas warming this means CO2 is not so easily absorbed, and remains in the atmosphere.
+
+Carbon can be released back into the atmosphere in many different ways:
+
+* *Respiration:* Performed by plants and animals.
+* *Decay:* Of animal and plant matter. Fungi and bacteria break down the carbon compounds in dead animals and plants and convert the carbon to carbon dioxide if oxygen is present, or methane if not. The melting permafrost is releasing large amounts of methane.
+* *Burning fossil fuels*
+
+
+## 3. Planetary energy *imbalance*
+
+Of course, we can’t talk about the planetary energy balance, Greenhouse effect and carbon cycle
+without quickly touching on the fact that greenhouse gas concentrations have risen markedly in recent decades. 
+
+This is clearly evident in
+[data from Cape Grim](https://www.csiro.au/en/Research/OandA/Areas/Assessing-our-climate/Greenhouse-gas-data)
+on Tasmania’s west coast, which is one of the three premier Baseline Air Pollution Stations in the
+World Meteorological Organization-Global Atmosphere Watch (WMO-GAW) network.
+Pre-industrial CO2 concentrations (i.e. prior to the mid-1800s) were 280ppm, now we’re at almost 410ppm.
+
+This increase in the Greenhouse effect means that there’s currently more energy coming into the system
+than going out (i.e. an energy imbalance).
+If Earth were like Mercury, for instance, a planet composed of low conductivity material and without oceans,
+its surface temperature would rise quickly to a level at which the planet was again radiating
+as much heat energy to space as the absorbed solar energy.
+Earth's temperature does not adjust as fast as Mercury's due to the ocean's thermal inertia,
+which is substantial because the ocean is mixed to considerable depths by winds and convection.
+Thus it requires centuries for Earth's surface temperature to respond fully to a climate forcing
+(i.e. even if we stopped emitting greenhouse gases today, the planet would continue to warm).
+
+> **350.org**
+>
+> Interestingly, the name for the famous climate action organization [350.org](https://350.org/)
+> comes from a [research paper](https://www.giss.nasa.gov/research/briefs/hansen_16/)
+> published back in 2011 which suggested that atmospheric carbon dioxide must be reduced
+> to about 350 ppm or less to stop global warming.
+> (i.e. the planet has already warmed a bit in response to the energy imbalance - 1°C at the surface on average -
+> hence the number is 350ppm and not 280ppm). 
+
+
+## 4. General circulation
 
 ### Differential heating
 
@@ -214,7 +310,7 @@ thus the wind circulates anti-clockwise around a high and clockwise around a low
 > and southerly winds bringing cold air from over the Southern Ocean
 > as it departs to the east.
 
-### Different time and space scales
+## 5. Scales of motion
 
 Mid-latitude eddies are a good example of how smaller scale processes
 can also have a large and important impact on the climate system.
@@ -248,7 +344,7 @@ means that the average maximum temperature in coastal suburbs
 like Bondi are substantially lower than for the inland western suburbs.
 
 
-## Ocean circulation
+## 6. Ocean circulation
 
 ### Surface currents  
   
@@ -336,7 +432,7 @@ Annual: ENSO, SAM, IOD (Show BoM seasonal outlook video, drought)
 Geological timescales: Milankovic cycles, movement of continents, etc 
 
 
-## Summary
+## 7. Summary
 
 Our weather and climate is driven ultimately by the unequal distribution
 of energy that the Earth receives from the Sun.
