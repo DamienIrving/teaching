@@ -439,7 +439,7 @@ the transport of heat from the tropics towards the poles.
 Because it evolves more slowly than the atmosphere (and evaporation from the ocean surface is a massive source of moisture),
 the ocean plays a big role in climate variability (i.e. in droughts, wetter/drier than average seasons/years, etc).
 
-You'll notice in the latest [seasonal outlook](https://www.youtube.com/watch?v=XaWR-I4jvzE)
+You'll notice in the latest [seasonal outlook](https://www.youtube.com/playlist?list=PLbKuJrA7Vp7naJL31deES8QAV5E0q6U_H)
 from the Bureau of Meteorology that they focus a lot on sea surface temperatures in the
 tropical Indian Ocean (driven by the [Indian Ocean Dipole](http://www.bom.gov.au/climate/iod/))
 and tropical Pacific Ocean (driven by the [El Nino Southern Oscillation](https://www.youtube.com/watch?v=dzat16LMtQk)).
