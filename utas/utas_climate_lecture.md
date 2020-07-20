@@ -265,7 +265,7 @@ There are in fact three cells in either hemisphere named Hadley, Ferrel and Pola
 
 ### Coriolis effect
 
-*A nice illustration of the Coriolis effect can be found [here](https://photobucket.com/gallery/user/henryflowers33/media/bWVkaWFJZDozMTc5NDIxMw==/?ref=).*
+*A nice illustration of the Coriolis effect can be found [here](https://www.britannica.com/science/Coriolis-force).*
 
 One might expect the surface winds associated with the Hadley cells to flow
 from the two high pressure regions in the subtropics (i.e. there's one in each hemisphere)
