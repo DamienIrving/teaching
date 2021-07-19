@@ -210,11 +210,11 @@ gradually decreases from the tropics towards the poles.
 >
 > At the equinox (March 21 and September 23) the sun is directly overhead at the equator.
 >
-> At the winter solstice (June 21) the sun is directly overhead at Tropic of Capricorn (23.5° South)
-> and it's dark all day within the Arctic Circle (66.5° North). 
+> At the winter solstice (June 21) the sun is directly overhead at Tropic of Cancer (23.5° North)
+> and it's dark all day within the Antarctic Circle (66.5° South). 
 >
-> At the summer solstice (December 22) the sun is directly overhead at the Tropic of Cancer (23.5° North)
-> and it's dark all day within the Antarctic Circle (66.5° South)
+> At the summer solstice (December 22) the sun is directly overhead at the Tropic of Capricorn (23.5° South)
+> and it's dark all day within the Artic Circle (66.5° North)
 
 This means that at low latitudes Earth's surface actually absorbs more energy
 than the upper atmosphere emits to space (an energy surplus)
