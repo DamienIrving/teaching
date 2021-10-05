@@ -87,6 +87,7 @@ the book covers how to do the following:
 
 An abbreviated version of the project directory tree as it appears toward the end of the book:
 
+```text
 zipf/
 ├── .gitignore
 ├── CITATION.md
@@ -113,6 +114,7 @@ zipf/
 │   ├── dracula.png
 │   └── ...
 └── ...
+```
 
 ## Software installation
 
@@ -643,7 +645,7 @@ $ python bin/plotcounts.py results/jane_eyre.csv --outfile results/jane_eyre.png
 
 # Testing
 
-## Assertions
+Assertions:
 
 ```python
 frequencies = [13, 10, 2, -4, 5, 6, 25]
@@ -654,13 +656,20 @@ for freq in frequencies[:5]:
 print('total frequency of first 5 words:', total)
 ```
 
-## Unit tests
+The most widely used test framework/runner for Python is called `pytest`, which structures tests as follows:
 
-Following these rules, we can create a test_zipfs.py script in your bin directory that contains the test we just developed:
+- Tests are put in files whose names begin with `test_`.
+- Each test is a function whose name also begins with `test_`.
+- These functions use assert to check results.
+
+We could test our word counting function by using a poem short enough for the words
+to be counted by hand
 
 ```bash
 $ cat test_data/risk.txt
 ```
+
+Create a `test_zipfs.py` script:
 
 ```python
 from collections import Counter
@@ -684,15 +693,291 @@ def test_word_count():
     assert actual_result == expected_result
 ```
 
+```bash
+$ pytest
+```
 
 
+Other considerations:
+
+- Floating point numbers
+- Integration testing
+  - Our Zipf’s Law analysis has two steps: counting the words in a text and estimating the alpha parameter from the word count.
+  - Use random word generator to created a known distribution
+- Regression testing
+  - We calculated an alpha of 1.0866646252515038 for Dracula.
+- Coverage
+  - Show plot from book
+- Continuous integration
+  - The book was written when TravisCI was popular
+  - Now it's GitHub actions: https://github.com/features/actions
+  
+  
+## How much testing is enough? 
+
+The answer depends on what the software is being used for and by whom.
+If it is for a safety-critical application such as a medical device, we should aim for 100% code coverage,
+i.e., every single line in the application should be tested.
+In fact, we should probably go further and aim for 100% path coverage to ensure that every possible path through the code has been checked.
+Similarly, if the software has become popular and is being used by thousands of researchers all over the world,
+we should probably check that it’s not going to embarrass us.
+
+But most of us don’t write software that people’s lives depend on, or that is in a “top 100” list,
+so requiring 100% code coverage is like asking for ten decimal places of accuracy
+when checking the voltage of a household electrical outlet.
+We always need to balance the effort required to create tests
+against the likelihood that those tests will uncover useful information.
+We also have to accept that no amount of testing can prove a piece of software is completely correct.
+A function with only two numeric arguments has 2^128 possible inputs.
+Even if we could write the tests, how could we be sure we were checking the result of each one correctly?
+
+Luckily, we can usually put test cases into groups.
+For example, when testing a function that summarizes a table full of data, it’s probably enough to check that it handles tables with:
+- no rows
+- only one row
+- many identical rows
+- rows having keys that are supposed to be unique, but aren’t
+- rows that contain nothing but missing values
+
+Some projects develop checklists like this one to remind programmers what they ought to test.
+These checklists can be a bit daunting for newcomers, but they are a great way to pass on hard-earned experience.
 
 
+# Handling errors
+
+Something that goes wrong while a program is running is sometimes referred to as an exception from normal behavior. 
+
+```python
+numbers = [-5, 0, 5]
+for i in [0, 1, 2, 3]:
+    try:
+        denom = numbers[i]
+        result = 1/denom
+        print(f'1/{denom} == {result}')
+    except IndexError as error:
+        print(f'index {i} out of range')
+    except ZeroDivisionError as error:
+        print(f'{denom} has no reciprocal: {error}')
+```
+
+For example,
+we add this to collate.py:
+
+```python
+if fname[-4:] != '.csv':
+    raise OSError(f'{fname}: File must end in .csv')
+```
+
+We look at writing tests for corr
+
+## Reporting / logging errors
+
+Programs should report things that go wrong;
+they should also sometimes report things that go right so that people can monitor their progress.
+Adding print statements is a common approach,
+but removing them or commenting them out is tedious, error-prone and messes up your version control workflow.
+
+```python
+import logging
 
 
+logging.basicConfig(level=logging.DEBUG)  #, filename='logging.log')
+
+logging.debug('This is for debugging.')
+logging.info('This is just for information.')
+logging.warning('This is a warning.')
+logging.error('Something went wrong.')
+logging.critical('Something went seriously wrong.')
+```
+
+(Execute the above with different levels set)
+
+Run the final version of collate.py with different command line flags for verbosity and log file:
+https://github.com/amira-khan/zipf/blob/master/pyzipf/collate.py
 
 
+# Provenance tracking
+
+Our Zipf’s Law analysis represents a typical data science project
+in that we’ve written some code that leverages other pre-existing software packages
+in order to produce the key results of a report.
+To make a computational workflow like this open, transparent, and reproducible we must archive three key items:
+- A copy of any *analysis scripts or notebooks* used to produce the key results presented in the report.
+- A detailed description of the *software environment* in which those analysis scripts or notebooks ran.
+- A description of the *data processing steps* taken in producing each key result,
+  i.e., a step-by-step account of which scripts were executed in what order for each key result.
+
+## Software environment
+
+```bash
+$ pip freeze
+```
+
+Archiving a list of package names and version numbers would mean that our software environment is technically reproducible,
+but it would be left up to the reader of the report to figure out how to get all those packages installed and working together.
+This might be fine for a small number of packages with very few dependencies,
+but in more complex cases we probably want to make life easier for the reader
+(and for our future selves looking to re-run the analysis).
+One way to make things easier is to export a description of a complete conda environment,
+which can be saved as YAML using:
+
+```bash
+$ conda env export > environment.yml
+$ conda env create -f environment.yml
+```
+
+## Data processing steps
+
+we could add a new Markdown file called `KhanVirtanen2020.md` to the repository to describe the steps:
+
+```text
+The code in this repository was used in generating the results
+for the following paper:
+
+Khan A & Virtanen S, 2020. Zipf's Law in classic english texts.
+*Journal of Important Research*, 27, 134-139.
+
+The code was executed in the software environment described by
+`environment.yml`. It can be installed using
+[conda](https://docs.conda.io/en/latest/):
+$ conda env create -f environment.yml
+
+Figure 1 in the paper was created by running the following at
+the command line:
+$ make all
+```
+
+## Analysis scripts
+
+Put `environment.yml` and `KhanVirtanen2020.md` in the repo,
+tag a release and then use Zenodo integration:
+https://github.com/amira-khan/zipf/releases/tag/KhanVirtanen2020
 
 
+# Packaging
 
+## setuptools
+
+Python has several ways to build an installable package.
+We show how to use `setuptools`,
+which is the lowest common denominator and will allow everyone,
+regardless of what Python distribution they have, to use our package.
+
+As the name suggests,
+the heart of setuptools is the `setup.py` file,
+so we go through what information needs to be included in it.
+
+```text
+pkg_name
+├── pkg_name
+│   ├── module1.py
+│   └── module2.py
+├── README.md
+└── setup.py
+```
+
+```python
+from setuptools import setup
+
+
+setup(
+    name='pyzipf',
+    version='0.1',
+    author='Amira Khan',
+    packages=['pyzipf'],
+    install_requires=[
+        'matplotlib',
+        'pandas',
+        'scipy',
+        'pyyaml',
+        'pytest'])
+```
+
+We go through what needs to be included in the `setup.py` file.
+
+## Installation
+
+Create a virtual environment:
+
+```python
+$ conda create -n pyzipf pip python=3.7.6
+$ conda activate pyzipf
+```
+
+Install the package:
+```
+(pyzipf)$ cd ~/pyzipf
+(pyzipf)$ pip install -e .
+```
+
+We can now import our package in a script or a Jupyter notebook just as we would any other package.
+For example, to use the function in utilities, we would write:
+
+```python
+from pyzipf import utilities as util
+
+
+util.collection_to_csv(...)
+```
+
+## Distribution
+
+An installable package is most useful if we distribute it
+so that anyone who wants it can run `pip install pyzipf` and get it.
+To make this possible, we need to use setuptools to create a source distribution
+(known as an sdist in Python packaging jargon).
+
+```bash
+(pyzipf)$ python setup.py sdist
+```
+
+This creates a file named `dist/pyzipf-0.1.tar.gz`.
+Thi file can now be distributed via PyPI, the standard repository for Python packages.
+
+The preferred tool for uploading packages to PyPI is called twine (which can be pip installed)
+
+```bash
+$ twine upload --repository pypi dist/*
+```
+
+https://pypi.org/project/pyzipf/
+
+(Many people do a conda package too)
+
+## Documentation
+
+Docstrings and READMEs are sufficient to describe most simple packages,
+but as our code base grows larger,
+we will want to complement these manually written sections with automatically generated content,
+references between functions, and search functionality.
+For most large Python packages,
+such documentation is generated using a documentation generator called Sphinx
+which is often used in combination with a free online hosting service called Read the Docs.
+
+```bash
+$ pip install sphinx
+$ mkdir docs
+$ cd docs
+$ sphinx-quickstart
+```
+
+Generates the reStructuredText (reST) files at: https://github.com/amira-khan/zipf/tree/master/docs
+
+A few edits to the files in `docs/` and then `make html` to view the pages.
+(Which is basically what ReadTheDocs runs in the background)
+
+https://pyzipf.readthedocs.io/en/latest/
+
+## Publication
+
+As a final step to releasing our new package,
+we might want to give it a DOI so that it can be cited by researchers.
+As we saw earlier, GitHub integrates with Zenodo for precisely this purpose.
+
+While creating a DOI using a site like Zenodo is often the end of the software publishing process,
+there is the option of publishing a journal paper to describe the software in detail.
+Some research disciplines have journals devoted to describing particular types of software
+(e.g., Geoscientific Model Development),
+and there are also a number of generic software journals such as
+the Journal of Open Research Software and the Journal of Open Source Software. 
 
