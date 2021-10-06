@@ -55,13 +55,20 @@ this will hopefully allow you to get a feel for what skills you already have,
 what skills you might need to pick up, and how they all fit together in the bigger picture.
 
 
-# Overview
+# Data analysis project
 
 The data analysis task that we focus on relates to a fascinating result in the field of quantitative linguistics.
 Zipf’s Law states that the second most common word in a body of text appears half as often as the most common,
 the third most common appears a third as often, and so on.
 To test whether Zipf’s Law holds for a collection of classic novels that are freely available from Project Gutenberg,
 we write a software package that counts and analyzes the word frequency distribution in any arbitrary body of text.
+
+e.g. So according to our fit alpha=1.1, which means the most frequent wor
+ will occur approximately 2^1.1 = 2.1 times as often as the second most frequent word,
+ 3^1.1=3.3 times as often as the third most frequent word, and so on. 
+
+
+# Overview
 
 In the process of writing and publishing this Python package to verify Zipf’s Law,
 the book covers how to do the following:
@@ -127,7 +134,7 @@ In order to conduct our analysis, we need to install the following software:
 - GNU Make
 
 
-# Unix Shell
+# Unix Shell 
 
 A more powerful version of Finder / Windows Explorer. 
 - Organise and interrogate files, coordinate workflows, etc
@@ -136,7 +143,7 @@ A more powerful version of Finder / Windows Explorer.
 
 Three shortest books:
 ```bash
-$ wc -l *.txt | sort -n | head -n 3
+$ wc -l data/*.txt | sort -n | head -n 3
 ```
 
 Book summary information:
@@ -151,8 +158,8 @@ head -n 17 $1 | tail -n 8 | grep $2
 ```
 
 ```bash
-$ bash book_summary.sh ../data/frankenstein.txt Author
-$ bash book_summary.sh ../data/frankenstein.txt Release
+$ bash bin/book_summary.sh ../data/frankenstein.txt Author
+$ bash bin/book_summary.sh ../data/frankenstein.txt Release
 ```
 
 Find all the books and their authors:
@@ -256,7 +263,7 @@ if __name__ == '__main__':
 
 ```bash
 $ python bin/countwords.py data/dracula.txt -n 10
-$ head -n 500 data/dracula.txt | python bin/countwords.py --n 10
+$ head -n 500 data/dracula.txt | python bin/countwords.py -n 10
 ```
 
 ```bash
@@ -349,7 +356,7 @@ def collection_to_csv(collection, num=None):
     writer.writerows(collection[0:num])
 ```
 
-After making this change, `countwords.py` looks like this:
+After making this change, `countwords2.py` looks like this:
 
 ```
 """
@@ -523,6 +530,10 @@ settings :
 help :
 	@grep -h -E '^##' ${MAKEFILE_LIST} | sed -e 's/## //g' \
 	| column -t -s ':'
+```
+
+```bash
+$ make all -n
 ```
 
 ```bash
@@ -761,7 +772,7 @@ for i in [0, 1, 2, 3]:
 ```
 
 For example,
-we add this to collate.py:
+we add this to collate2.py:
 
 ```python
 if fname[-4:] != '.csv':
