@@ -15,6 +15,12 @@
 
 To test whether Zipf’s Law holds for a collection of classic novels available from [Project Gutenberg](https://www.gutenberg.org/), we write software that counts and analyses the word frequency distribution in any arbitrary body of text.
 
+----
+
+![](https://i.imgur.com/BXPs6z7.png)
+
+Word count distribution for *Dracula* ($\alpha = 1.1$)
+
 ---
 
 ## Overview
@@ -184,10 +190,19 @@ As our programs or workflows become more complex, we may want to use up to four 
 
 ----
 
-The most widely used test runner for Python is called pytest, which structures tests as follows:
+### pytest
 
 - Tests are put in files whose names begin with test_
 - Each test is a function whose name also begins with test_
 - These functions use assert to check results
 
----
+----
+
+- Floating point numbers
+- Integration testing
+- Regression testing
+- Test coverage
+- Continuous integration
+- How much testing is enough?
+ 
+ ---
