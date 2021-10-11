@@ -708,17 +708,18 @@ def test_word_count():
 $ pytest
 ```
 
-
 Other considerations:
-
-- Floating point numbers
+- Floating point numbers (show docs: [`pytest.approx`](https://docs.pytest.org/en/6.2.x/reference.html#pytest-approx))
 - Integration testing
   - Our Zipf’s Law analysis has two steps: counting the words in a text and estimating the alpha parameter from the word count.
   - Use random word generator to created a known distribution
 - Regression testing
   - We calculated an alpha of 1.0866646252515038 for Dracula.
 - Coverage
-  - Show plot from book
+  - `coverage run -m pytest`
+  - `coverage report -m`
+  - `coverage html`
+  - htmlcov/index.html
 - Continuous integration
   - The book was written when TravisCI was popular
   - Now it's GitHub actions: https://github.com/features/actions
@@ -791,9 +792,6 @@ but removing them or commenting them out is tedious, error-prone and messes up y
 ```python
 import logging
 
-
-logging.basicConfig(level=logging.DEBUG)  #, filename='logging.log')
-
 logging.debug('This is for debugging.')
 logging.info('This is just for information.')
 logging.warning('This is a warning.')
@@ -801,10 +799,15 @@ logging.error('Something went wrong.')
 logging.critical('Something went seriously wrong.')
 ```
 
-(Execute the above with different levels set)
+Run `collate2.py` with different command line flags for verbosity:
 
-Run the final version of collate.py with different command line flags for verbosity and log file:
-https://github.com/amira-khan/zipf/blob/master/pyzipf/collate.py
+```bash
+$ python bin/collate2.py results/dracula.csv results/frankenstein.csv > results/test.csv
+$ cat collate.log
+
+$ python bin/collate2.py -v results/dracula.csv results/frankenstein.csv > results/test.csv
+$ cat collate.log
+```
 
 
 # Provenance tracking
@@ -815,6 +818,7 @@ in order to produce the key results of a report.
 To make a computational workflow like this open, transparent, and reproducible we must archive three key items:
 - A copy of any *analysis scripts or notebooks* used to produce the key results presented in the report.
 - A detailed description of the *software environment* in which those analysis scripts or notebooks ran.
+  (See notes below)
 - A description of the *data processing steps* taken in producing each key result,
   i.e., a step-by-step account of which scripts were executed in what order for each key result.
 
@@ -837,28 +841,9 @@ $ conda env export > environment.yml
 $ conda env create -f environment.yml
 ```
 
-## Data processing steps
+## Example
 
-we could add a new Markdown file called `KhanVirtanen2020.md` to the repository to describe the steps:
-
-```text
-The code in this repository was used in generating the results
-for the following paper:
-
-Khan A & Virtanen S, 2020. Zipf's Law in classic english texts.
-*Journal of Important Research*, 27, 134-139.
-
-The code was executed in the software environment described by
-`environment.yml`. It can be installed using
-[conda](https://docs.conda.io/en/latest/):
-$ conda env create -f environment.yml
-
-Figure 1 in the paper was created by running the following at
-the command line:
-$ make all
-```
-
-## Analysis scripts
+[`KhanVirtanen2020.md`](https://github.com/amira-khan/zipf/blob/master/KhanVirtanen2020.md)
 
 Put `environment.yml` and `KhanVirtanen2020.md` in the repo,
 tag a release and then use Zenodo integration:
@@ -908,17 +893,16 @@ We go through what needs to be included in the `setup.py` file.
 
 ## Installation
 
-Create a virtual environment:
-
+Create a virtual environment (using the same Python as the base environment):
+ 
 ```python
-$ conda create -n pyzipf pip python=3.7.6
-$ conda activate pyzipf
+$ conda create -n test pip python=3.8.5
+$ conda activate test
 ```
 
-Install the package:
+Install the package (from same directory as `setup.py`):
 ```
-(pyzipf)$ cd ~/pyzipf
-(pyzipf)$ pip install -e .
+(test)$ pip install -e .
 ```
 
 We can now import our package in a script or a Jupyter notebook just as we would any other package.
@@ -939,7 +923,7 @@ To make this possible, we need to use setuptools to create a source distribution
 (known as an sdist in Python packaging jargon).
 
 ```bash
-(pyzipf)$ python setup.py sdist
+(test)$ python setup.py sdist
 ```
 
 This creates a file named `dist/pyzipf-0.1.tar.gz`.
@@ -991,4 +975,11 @@ Some research disciplines have journals devoted to describing particular types o
 (e.g., Geoscientific Model Development),
 and there are also a number of generic software journals such as
 the Journal of Open Research Software and the Journal of Open Source Software. 
+
+## What's next
+
+This stuff takes years to work into your daily workflows.
+
+If you find yourself embarking on bigger projects...
+https://github.com/gvwilson/12-design#readme
 

@@ -1,7 +1,10 @@
+---
+title: Research Software Engineering with Python
+---
 
 ![](https://i.imgur.com/xDy67Hx.jpg)
-
 [https://merely-useful.tech/py-rse/](https://merely-useful.tech/py-rse/)
+Damien Irving, CSIRO Climate Science Centre
 
 ---
 
@@ -13,7 +16,7 @@
 
 ----
 
-To test whether Zipf’s Law holds for a collection of classic novels available from [Project Gutenberg](https://www.gutenberg.org/), we write software that counts and analyses the word frequency distribution in any arbitrary body of text.
+To test whether Zipf’s Law holds for a collection of classic novels available from [Project Gutenberg](https://www.gutenberg.org/), we wrote software that counts and analyses the word frequency distribution in any arbitrary body of text.
 
 ----
 
@@ -27,34 +30,34 @@ Word count distribution for *Dracula* ($\alpha = 1.1$)
 
 ----
 
-- Organise small and medium-sized data science projects.
-- Use the Unix shell to efficiently manage your data and code.
-- Write Python programs that can be used on the command line.
-- Use Git and GitHub to track and share your work.
+1. Organise small and medium-sized data science projects
+2. Use the Unix shell to efficiently manage your data and code
+3. Write Python programs that can be used on the command line
+4. Use Git and GitHub to track and share your work
 
 ----
 
-- Work productively in a small team where everyone is welcome.
-- Use Make to automate complex workflows.
-- Enable users to configure your software without modifying it directly.
-- Test your software and know which parts have not yet been tested.
-- Find, handle, and fix errors in your code.
+5. Work productively in a small team where everyone is welcome
+6. Use Make to automate complex workflows
+7. Enable users to configure your software without modifying it directly
+8. Test your software and know which parts have not yet been tested
+9. Find, handle, and fix errors in your code
 
 ----
 
-- Publish your code and research in open and reproducible ways.
-- Create Python packages that can be installed in standard ways.
+10. Publish your code and research in open and reproducible ways
+11. Create Python packages that can be installed in standard ways
 
 (We assume you're already using Python for data analysis.)
 
 ---
 
-## Project structure
+## 1. Get organised
 
 ----
 
 ```text
-zipf/
+pyzipf/
 ├── .gitignore
 ├── CITATION.md
 ├── CONDUCT.md
@@ -62,7 +65,7 @@ zipf/
 ├── LICENSE.md
 ├── README.md
 ├── Makefile
-├── bin
+├── bin (or pyzipf)
 │   ├── book_summary.sh
 │   ├── collate.py
 │   ├── countwords.py
@@ -82,19 +85,15 @@ zipf/
 └── ...
 ```
 
----
-
-## Software installation
-
-Bash shell, Git, text editor, Python 3 (via the Anaconda distribution), GNU Make.
+Software: Bash shell, Git, text editor, Python (via Anaconda), GNU Make.
 
 ---
 
-## Unix Shell
+## 2. Unix Shell
 
 ---
 
-## Command line programs
+## 3. Command line programs
 
 ----
 
@@ -106,11 +105,15 @@ The easiest way to do this is often to turn our code into a standalone program t
 
 ---
 
-## Git
+## 4. Git and GitHub
 
 ----
 
-Version control works by storing a master copy of your code in a repository, which you can’t edit directly. Instead, you check out a working copy of the code, edit that code, then commit changes back to the repository. In this way, version control records a complete revision history (i.e., of every commit), so that you can retrieve and compare previous versions at any time.
+Version control works by storing a master copy of your code in a repository, which you can’t edit directly.
+
+Instead, you check out a working copy of the code, edit that code, then commit changes back to the repository.
+
+In this way, version control records a complete revision history (i.e., of every commit), so that you can retrieve and compare previous versions at any time.
 
 ----
 
@@ -137,11 +140,15 @@ More advanced topics:
 - Branching
 - Conflicts
 - Branch-per-feature workflows
-- Pull requests
+- [Pull requests](https://github.com/merely-useful/py-rse/pull/567)
+
+----
+
+![](https://i.imgur.com/Rv1dG8b.png)
 
 ---
 
-## Working in teams
+## 5. Working in teams
 
 The success of a software project depends on more than just writing nice code.
 
@@ -157,7 +164,7 @@ The success of a software project depends on more than just writing nice code.
 
 ---
 
-## Workflow automation
+## 6. Workflow automation
 
 ----
 
@@ -173,7 +180,7 @@ Instead, we should use a **build manager** to keep track of what depends on what
 
 ---
 
-## Configuring programs
+## 7. Configuring programs
 
 As our programs or workflows become more complex, we may want to use up to four layers of configuration.
 
@@ -186,7 +193,7 @@ As our programs or workflows become more complex, we may want to use up to four 
 
 ---
 
-## Testing
+## 8. Testing
 
 ----
 
@@ -198,11 +205,114 @@ As our programs or workflows become more complex, we may want to use up to four 
 
 ----
 
-- Floating point numbers
+- Floating point numbers ([pytest.approx](https://docs.pytest.org/en/6.2.x/reference.html#pytest-approx))
 - Integration testing
 - Regression testing
 - Test coverage
-- Continuous integration
+- Continuous integration ([GitHub Actions](https://github.com/features/actions))
 - How much testing is enough?
- 
- ---
+
+---
+
+## 9. Handling errors
+
+----
+
+```python
+import logging
+
+logging.basicConfig(level=logging.DEBUG,
+                    filename='logging.log')
+
+logging.debug('This is for debugging.')
+logging.info('This is just for information.')
+logging.warning('This is a warning.')
+logging.error('Something went wrong.')
+logging.critical('Something went seriously wrong.')
+```
+
+---
+
+## 10. Provenance tracking
+
+1. Analysis code
+2. Software environment 
+3. Processing steps
+
+----
+
+Khan A & Virtanen S, 2020. Zipf's Law in classic english texts. *Journal of Important Research*, 27, 134-139
+
+[README](https://github.com/amira-khan/zipf/blob/master/KhanVirtanen2020.md)
+[Release](https://github.com/amira-khan/zipf/releases/tag/KhanVirtanen2020)
+[Zenodo integration](https://guides.github.com/activities/citable-code/)
+
+---
+
+## 11. Packaging
+
+via `setuptools`
+
+----
+
+```text
+pkg_name
+├── pkg_name
+│   ├── module1.py
+│   └── module2.py
+├── README.md
+└── setup.py
+```
+
+----
+
+### Installation
+
+----
+
+### Distribution
+
+```bash
+$ python setup.py sdist
+$ twine upload --repository pypi dist/*
+```
+
+https://pypi.org/project/pyzipf/
+
+----
+
+### Documentation
+
+```bash
+$ pip install sphinx
+$ mkdir docs
+$ cd docs
+$ sphinx-quickstart
+$ make html
+```
+
+https://github.com/amira-khan/zipf/tree/master/docs
+https://pyzipf.readthedocs.io/en/latest/
+
+----
+
+### Publication
+
+Consider a dedicated research software journal such as the [Journal of Open Research Software](https://openresearchsoftware.metajnl.com/) or the [Journal of Open Source Software](https://joss.theoj.org/).
+
+---
+
+## What's next?
+
+12 quick tips for software design
+https://github.com/gvwilson/12-design#readme
+
+---
+
+## Questions?
+
+Book: [https://merely-useful.tech/py-rse/](https://merely-useful.tech/py-rse/)
+
+Slides: [https://hackmd.io/@damienirving](https://hackmd.io/@damienirving)
+
+---
