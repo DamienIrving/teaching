@@ -63,9 +63,9 @@ the third most common appears a third as often, and so on.
 To test whether Zipf’s Law holds for a collection of classic novels that are freely available from Project Gutenberg,
 we write a software package that counts and analyzes the word frequency distribution in any arbitrary body of text.
 
-e.g. So according to our fit alpha=1.1, which means the most frequent wor
- will occur approximately 2^1.1 = 2.1 times as often as the second most frequent word,
- 3^1.1=3.3 times as often as the third most frequent word, and so on. 
+e.g. So according to our fit alpha=1.1, which means the most frequent word
+will occur approximately 2^1.1 = 2.1 times as often as the second most frequent word,
+3^1.1=3.3 times as often as the third most frequent word, and so on. 
 
 
 # Overview
@@ -471,6 +471,9 @@ we will inevitably forget some crucial steps and it will be hard for other peopl
 Instead, we should use a build manager to keep track of what depends on what and run our analysis programs automatically.
 These tools were invented to help programmers compile complex software, but can be used to automate any workflow.
 
+There are lots of build managers (e.g. snakemake) but none have really definitively won the popularity contest,
+so we use Make, which is universally available.
+
 Make works as follows:
 
 - A user can describe which files depend on each other by writing rules in a Makefile. 
@@ -667,6 +670,30 @@ for freq in frequencies[:5]:
 print('total frequency of first 5 words:', total)
 ```
 
+Unit tests:
+
+```python
+# Unit test for count_words function
+
+import sys
+sys.path.insert(1, './pyzipf')
+from collections import Counter
+import countwords
+
+risk_poem_counts = {'the': 3, 'risk': 2, 'to': 2, 'and': 1,
+                    'then': 1, 'day': 1, 'came': 1, 'when': 1, 'remain': 1,
+                    'tight': 1, 'in': 1, 'a': 1, 'bud': 1, 'was': 1,
+                    'more': 1, 'painful': 1, 'than': 1, 'it': 1, 'took': 1,
+                    'blossom': 1}
+expected_result = Counter(risk_poem_counts)
+
+with open('test_data/risk.txt', 'r') as reader:
+    actual_result = countwords.count_words(reader)
+
+assert actual_result == expected_result
+```
+
+We might have lots of unit tests, so we need to get a little more organised.
 The most widely used test framework/runner for Python is called `pytest`, which structures tests as follows:
 
 - Tests are put in files whose names begin with `test_`.
@@ -779,8 +806,6 @@ we add this to collate2.py:
 if fname[-4:] != '.csv':
     raise OSError(f'{fname}: File must end in .csv')
 ```
-
-We look at writing tests for corr
 
 ## Reporting / logging errors
 
