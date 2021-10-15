@@ -12,7 +12,7 @@ Damien Irving, CSIRO Climate Science Centre
 
 ----
 
-**Zipf’s Law** states that the second most common word in a body of text appears half as often as the most common, the third most common appears a third as often, and so on.
+**Zipf’s Law** states that the most common word in a body of text appears twice as often as the second most common, three times as often as the third most common, and so on.
 
 ----
 
@@ -205,9 +205,9 @@ As our programs or workflows become more complex, we may want to use up to four 
 
 ----
 
-- Floating point numbers ([pytest.approx](https://docs.pytest.org/en/6.2.x/reference.html#pytest-approx))
 - Integration testing
 - Regression testing
+- Floating point numbers ([pytest.approx](https://docs.pytest.org/en/6.2.x/reference.html#pytest-approx))
 - Test coverage
 - Continuous integration ([GitHub Actions](https://github.com/features/actions))
 - How much testing is enough?
