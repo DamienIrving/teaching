@@ -96,7 +96,7 @@ if __name__ == '__main__':
                         help='Word count csv file name')
     parser.add_argument('--outfile', type=str,
                         default='plotcounts.png',
-                        help='Output image file name')
+                        help='Output image file name (default=plotcounts.png)')
     parser.add_argument('--xlim', type=float, nargs=2,
                         metavar=('XMIN', 'XMAX'),
                         default=None, help='X-axis limits')
