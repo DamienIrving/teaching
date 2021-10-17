@@ -1,0 +1,6 @@
+.DS_Store
+.coverage
+.ipynb_checkpoints
+__pycache__
+pyzipf.egg-info
+dist
