@@ -1,9 +1,9 @@
 .PHONY: all clean help settings results
 
-COUNT=bin/countwords.py
-COLLATE=bin/collate.py
-PLOT=bin/plotcounts.py
-SUMMARY=bin/book_summary.sh
+COUNT=pyzipf/countwords.py
+COLLATE=pyzipf/collate.py
+PLOT=pyzipf/plotcounts.py
+SUMMARY=pyzipf/book_summary.sh
 DATA=$(wildcard data/*.txt)
 RESULTS=$(patsubst data/%.txt,results/%.csv,$(DATA))
 
