@@ -22,7 +22,7 @@ def update_counts(reader, word_counts):
 def main(args):
     """Run the command line program."""
     log_lev = logging.DEBUG if args.verbose else logging.WARNING
-    logging.basicConfig(level=log_lev, filename=args.logfile)
+    logging.basicConfig(level=log_lev, filename=args.logfile, filemode='w')
     word_counts = Counter()
     logging.info('Processing files...')
     for fname in args.infiles:
