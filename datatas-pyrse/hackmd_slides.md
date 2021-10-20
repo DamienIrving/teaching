@@ -85,7 +85,7 @@ pyzipf/
 └── ...
 ```
 
-Software: Bash shell, Git, text editor, Python (via Anaconda), GNU Make.
+Software: Bash shell, Git, text editor, Python (via Anaconda) and GNU Make following The Caprentries instructions ([here](https://carpentries.github.io/workshop-template/#setup) and [here](http://swcarpentry.github.io/make-novice/setup)).
 
 ---
 
