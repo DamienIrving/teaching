@@ -23,7 +23,7 @@ https://cdh.carpentries.org/community-development-roles.html#summary
 
 Useful (small) contributions:
 - Bug/typo fixes
-- Factual errors
+- Factual error fixes
 - Clearer explanations
 - Exercises (with solutions)
 - Supporting information (e.g. lesson objectives, instructor notes)
@@ -41,7 +41,7 @@ Make sure:
 - Submit an issue first for large contributions (i.e. before working on a PR)
 
 It helps if:
-- You've taught the lesson
+- You've seen the lesson in action (as an instructor, helper or learner)
 
 Don't worry if:
 - [Previewing pages locally](https://carpentries.github.io/lesson-example/07-checking/index.html) is too hard 
