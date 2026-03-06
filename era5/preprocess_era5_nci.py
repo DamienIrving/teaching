@@ -3,11 +3,13 @@
 Processes data from the following location at NCI:
 /g/data/rt52/era5/{level_type}/reanalysis/{variable}/*/*.nc
 
-Example:
-python era5.py msl single-levels 12 test.nc
+Command line example 1:
+python preprocess_era5_nci.py msl single-levels 12 msl_era5_oper_sfc_12UTC_19400101-20251130.nc
 
+Command line example 2:
+python preprocess_era5_nci.py u pressure-levels 5 u_era5_oper_500hPa_05UTC_19400301-20251130.nc --level 500
 """
-import pdb
+
 import glob
 import argparse
 
@@ -43,7 +45,6 @@ def main(args):
     output_da = output_da.sel(time=output_da['time'].dt.hour == args.hour)
     if args.level:
         output_da = output_da.sel(level=args.level)
-    pdb.set_trace()
     output_ds = output_da.to_dataset()
     output_ds.attrs = input_ds.attrs
     encoding = get_output_encoding(output_ds, args.variable)
@@ -65,7 +66,7 @@ if __name__ == '__main__':
     parser.add_argument("level_type", type=str, choices=('single-levels', 'pressure-levels'), help="ERA5 level type selection")
     parser.add_argument("hour", type=int, choices=valid_hours, help="ERA5 hour selection")
     parser.add_argument("outpath", type=str, help="output file path")
-    parser.add_argument("--level", type=int, default=None, choices=valid_levels, help="ERA5 level selection")
+    parser.add_argument("--level", type=int, default=None, choices=valid_levels, help="ERA5 pressure level selection (hPa)")
     args = parser.parse_args()
     if args.level_type == 'pressure_levels':
         assert args.level, 'You must select a level using the --level option' 
